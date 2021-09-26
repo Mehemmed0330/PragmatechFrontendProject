@@ -1,0 +1,195 @@
+#BusinessConsulting {
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/section1-bgcimg.jpg');
+    height: 100vh;
+}
+
+.header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.logo_name {
+    padding: 12px 65px;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto
+}
+
+.menu_links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    margin: 10px 5px;
+    padding: 12px 10px;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.link a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #acacac;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* .home_dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+}
+
+.home_dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.home_link {
+    clear: both;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+} */
+
+.home_dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+    background-color: #0ff;
+}
+
+.link:hover>.home_dropdown,
+.home_dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.home_link {
+    clear: both;
+    width: 100%;
+    padding: 5px;
+}
+
+.btn_buynow {
+    height: 38px;
+    padding: 8px 15px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    border: none;
+    background: linear-gradient(to right, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343) 95%/200% 100%;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.btn_buynow:hover {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(254, 255, 255), 0 0 82px rgb(255, 255, 255), 0 0 92px rgb(255, 255, 255), 0 0 102px rgb(255, 255, 255), 0 0 151px #0fa;
+}
+
+.text_box {
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translate(0, 50%);
+}
+
+.main_text_bottom {
+    text-align: center;
+    line-height: 40px;
+}
+
+.text_top_title {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #acacac;
+}
+
+.text_main_title {
+    font-family: "Inter", sans-serif;
+    font-size: 75px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.text_about {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #acacac;
+    padding: 0px 180px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 32%;
+    transform: translateY(30px);
+    height: 45px;
+}
+
+.purchace_now {
+    background: linear-gradient(to right, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343) 95%/200% 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 40px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.purchace_now:hover {
+    /* text-shadow: 17px 20px 20px rgb(59, 59, 59), 20px 2px 20px #fff, -20px 0px 21px #fff, -1px -20px 42px rgb(254, 255, 255), 0px 20px 82px rgb(255, 255, 255), -20px 20px 92px rgb(255, 255, 255), 20px 7px 20px rgb(255, 255, 255); */
+    box-shadow: 0 0 10px 2px #f0f, 0 0 0px 0px #f0f, 0 0 0px 0px #0ff;
+}
+
+.purchace_now i {
+    padding: 0px 5px;
+}
+
+.contact {
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    border-radius: 30px;
+    padding: 0px 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    background: inherit;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.contact:hover {
+    background-color: rgb(255, 104, 84);
+}
+
+.contact i {
+    padding: 0px 5px;
+}
