@@ -1,0 +1,72 @@
+.animation_main {
+    margin: 0px auto;
+    width: 600px;
+}
+
+.animation_items {
+    padding: 30px 0px;
+}
+
+.animation_first_box {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.first_text {
+    background-color: lightblue;
+    padding: 40px 0px;
+    animation: mymove 3s;
+    animation-timing-function: linear;
+    position: relative;
+    animation-delay: 2s;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    transition: all 1s ease;
+}
+
+.animation_second_box {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.second_text {
+    background-color: red;
+    padding: 40px 0px;
+    animation: mymove 3s;
+    animation-timing-function: linear;
+    position: relative;
+    animation-delay: 6s;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    transition: all 2s ease;
+}
+
+.animation_threed_box {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.threed_text {
+    background-color: green;
+    padding: 40px 0px;
+    animation: mymove 3s;
+    animation-timing-function: linear;
+    position: relative;
+    animation-delay: 10s;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    transition: all 3s ease;
+}
+
+@keyframes mymove {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+        display: none;
+    }
+}
