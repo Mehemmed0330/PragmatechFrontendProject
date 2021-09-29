@@ -47,7 +47,7 @@
 }
 
 .link a:hover {
-    color: rgb(6, 94, 151);
+    color: rgb(5, 139, 226);
 }
 
 .dropdown {
@@ -62,7 +62,7 @@
     z-index: 100;
 }
 
-.home_dropdown {
+.navbar_dropdown {
     padding: 3px 15px;
     background-color: rgb(15, 15, 17);
     margin-top: 20px;
@@ -76,7 +76,7 @@
     transition: all 0.3s ease;
 }
 
-.home_link {
+.navbar_link {
     clear: both;
     width: 100%;
     margin: 4px 0px;
@@ -84,17 +84,17 @@
     transition: all 0.3s ease;
 }
 
-.home_link:hover {
+.navbar_link:hover {
     background-color: rgb(8, 8, 9);
 }
 
-.home_link:hover a,
-.home_link {
-    color: rgb(6, 94, 151);
+.navbar_link:hover a,
+.navbar_link {
+    color: rgb(5, 139, 226);
 }
 
 .dropdown_element {
-    width: 850px;
+    width: 900px;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -119,12 +119,18 @@
     background-color: rgb(15, 15, 17);
 }
 
+
+/* With link and a together hover */
+
 .elements_first_link:hover,
 .elements_second_link:hover,
 .elements_threed_link:hover,
 .elements_fifth_link:hover {
     background-color: rgb(8, 8, 9);
 }
+
+
+/* With link and a together hover */
 
 .elements_first_link:hover,
 .elements_second_link:hover,
@@ -134,7 +140,7 @@
 .elements_second_link:hover a,
 .elements_threed_link:hover a,
 .elements_fifth_link:hover a {
-    color: rgb(6, 94, 151);
+    color: rgb(5, 139, 226);
 }
 
 .dropdown_element_link_first {
@@ -147,7 +153,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 100px;
-    padding-left: 5px;
+    padding-left: 10px;
     transition: all 0.3s ease;
 }
 
@@ -165,7 +171,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 100px;
-    padding-left: 5px;
+    padding-left: 10px;
     transition: all 0.3s ease;
 }
 
@@ -183,7 +189,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 100px;
-    padding-left: 5px;
+    padding-left: 10px;
     transition: all 0.3s ease;
 }
 
@@ -200,7 +206,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 100px;
-    padding-left: 5px;
+    padding-left: 10px;
     transition: all 0.3s ease;
 }
 
@@ -208,7 +214,7 @@
     font-size: 12px;
 }
 
-.home_link a {
+.navbar_link a {
     color: rgb(133, 133, 134);
     font-size: 12px;
 }
