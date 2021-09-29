@@ -33,10 +33,9 @@
 }
 
 .link {
-    margin: 10px 5px;
-    padding: 12px 10px;
+    margin: 0px 5px;
+    padding: 23px 10px;
     display: block;
-    transition-duration: 0.5s;
 }
 
 .link a {
@@ -44,53 +43,66 @@
     text-decoration: none;
     color: #acacac;
     font-family: "Inter", sans-serif;
+    transition: all 0.3s ease;
 }
 
+.link a:hover {
+    color: rgb(6, 94, 151);
+}
 
-/* .home_dropdown {
+.dropdown {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease;
     margin-top: 1rem;
-    display: none;
+    /* display: none; */
+    /* background-color: rgb(255, 0, 119); */
+    margin: 5px 0px;
+    z-index: 100;
 }
-
-.home_dropdown:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-.home_link {
-    clear: both;
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-    display: block;
-} */
 
 .home_dropdown {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    display: none;
-    background-color: #0ff;
+    padding: 3px 15px;
+    background-color: rgb(15, 15, 17);
+    margin-top: 20px;
 }
 
-.link:hover>.home_dropdown,
-.home_dropdown:hover {
+.link:hover>.dropdown,
+.dropdown:hover {
     visibility: visible;
     opacity: 1;
     display: block;
+    transition: all 0.3s ease;
 }
 
 .home_link {
     clear: both;
     width: 100%;
-    padding: 5px;
+    margin: 4px 0px;
+    padding: 4px 15px;
+    transition: all 0.3s ease;
+}
+
+.home_link:hover {
+    background-color: rgb(8, 8, 9);
+}
+
+.home_link:hover a,
+.home_link {
+    color: rgb(6, 94, 151);
+}
+
+.dropdown_flex {
+    margin-top: 23px;
+    display: flex;
+    background-color: rgb(8, 8, 9);
+    padding: 100px 50px;
+}
+
+.home_link a {
+    color: rgb(133, 133, 134);
+    font-size: 12px;
 }
 
 .btn_buynow {
