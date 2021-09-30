@@ -1,9 +1,26 @@
+body {
+    background-color: black;
+}
+
+.shadow_circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 70px 50px #0ff, 0 0 70px 50px #0ff, 0 0 70px 50px #0ff;
+    background-color: #0ff;
+    position: fixed;
+    border: none;
+    top: 50%;
+    left: -10%;
+}
+
 #BusinessConsulting {
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/section1-bgcimg.jpg');
     height: 100vh;
+    position: relative;
 }
 
 .header {
@@ -318,4 +335,8 @@
 
 .contact i {
     padding: 0px 5px;
+}
+
+.diw {
+    height: 100vh;
 }
