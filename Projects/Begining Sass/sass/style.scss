@@ -1,0 +1,9 @@
+$sizes: 80px,
+60px;
+@each $size in $sizes {
+    .button {
+        height: $size;
+        width: $size;
+        background-color: red;
+    }
+}
