@@ -3,15 +3,15 @@ body {
 }
 
 .shadow_circle {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 0px;
     border-radius: 50%;
-    box-shadow: 0 0 70px 50px #0ff, 0 0 70px 50px #0ff, 0 0 70px 50px #0ff;
-    background-color: #0ff;
+    box-shadow: 0 0 0px 0px #0ff, 0 0 8px 0px #0ff, 0 0 125px 56px #0ff;
+    background-color: rgb(81, 255, 241);
     position: fixed;
     border: none;
     top: 50%;
-    left: -10%;
+    left: 10%;
 }
 
 #BusinessConsulting {
