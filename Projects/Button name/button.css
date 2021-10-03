@@ -1,0 +1,55 @@
+.container {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.buttons-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-hover-help {
+    background-color: black;
+    border: none;
+    padding: 15px 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-hover-help::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: bottom center;
+    background: tomato;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.btn-hover-help:hover::after {
+    transform: scaleY(0);
+}
+
+.btn-hover-help a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.btn-initial-border {
+    background-color: initial;
+    border: 1px solid grey;
+    padding: 15px 25px;
+}
+
+.btn-initial-border a {
+    font-weight: 800;
+    font-family: sans-serif;
+    color: tomato;
+    text-decoration: none;
+}
