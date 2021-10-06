@@ -2267,7 +2267,7 @@ table {
   padding: 0px 80px;
 }
 
-.header-top {
+#HeaderTop .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2275,7 +2275,7 @@ table {
   border-bottom: 1px solid #777;
 }
 
-.contact {
+#HeaderTop .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2284,11 +2284,11 @@ table {
   color: #777;
 }
 
-.contact__number {
+#HeaderTop .contact .contact__number {
   margin: 0px 5px;
 }
 
-.preferences {
+#HeaderTop .preferences {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2297,21 +2297,24 @@ table {
   color: #777;
 }
 
-.unit {
+#HeaderTop .preferences .unit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 10px;
 }
 
-.unit__item {
+#HeaderTop .preferences .unit__item {
   font-size: 10px;
   margin: 0px 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.unit__item:hover,
+#HeaderTop .preferences .unit__item:hover {
+  color: #fcb941;
+}
+
 .unit__item:hover .item__link,
 .item__link:hover,
 .dropdown__link:hover {
@@ -2367,7 +2370,7 @@ table {
 .dropdown__link {
   clear: both;
   width: 100%;
-  padding: 4px 4px;
+  padding: 4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: none;

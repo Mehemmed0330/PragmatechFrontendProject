@@ -1,52 +1,48 @@
 #HeaderTop {
-    padding: 0px 80px;
+    padding: $spacing-zero $id--size;
+    .header-top {
+        display: flex;
+        padding: $sapacing-top $spacing-zero;
+        border-bottom: 1px solid $light-grey;
+    }
+    .contact {
+        display: flex;
+        font-size: $font--middle;
+        font-family: sans-serif;
+        color: $light-grey;
+        .contact__number {
+            margin: $spacing-zero $spacing-middle;
+        }
+    }
+    .preferences {
+        display: flex;
+        margin-left: auto;
+        font-family: sans-serif;
+        color: $light-grey;
+        .unit {
+            display: flex;
+            font-size: $font--middle;
+            &__item {
+                font-size: $font--middle;
+                margin: $spacing-zero $spacing-middle;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $light-orange;
+                }
+            }
+        }
+    }
 }
 
-.header-top {
-    display: flex;
-    padding: 5px 0px;
-    border-bottom: 1px solid #777;
-}
-
-.contact {
-    display: flex;
-    font-size: $font-linksize--10px;
-    font-family: sans-serif;
-    color: #777;
-}
-
-.contact__number {
-    margin: 0px 5px;
-}
-
-.preferences {
-    display: flex;
-    margin-left: auto;
-    font-family: sans-serif;
-    color: #777;
-}
-
-.unit {
-    display: flex;
-    font-size: 10px;
-}
-
-.unit__item {
-    font-size: $font-linksize--10px;
-    margin: 0px 5px;
-    transition: all 0.3s ease;
-}
-
-.unit__item:hover,
 .unit__item:hover .item__link,
 .item__link:hover,
 .dropdown__link:hover {
-    color: rgb(252, 185, 65);
+    color: $light-orange;
 }
 
 .item__link {
-    margin: 0px 8px;
-    color: #777;
+    margin: $spacing-zero $spacing-large;
+    color: $light-grey;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -57,24 +53,24 @@
     position: absolute;
     transition: all 0.5s ease;
     margin-top: 1rem;
-    margin: 5px 0px;
+    margin: $spacing-middle $spacing-zero;
     z-index: 100;
 }
 
 .dropdownitems {
-    padding: 4px 0px;
+    padding: $spacing-dritem $spacing-zero;
     background-color: white;
-    margin: 2px 5px;
-    box-shadow: 0px 0px 5px gainsboro;
+    margin: $spacing-little $spacing-middle;
+    box-shadow: 0px 0px $spacing-middle gainsboro;
 }
 
 .dropdownitems__link {
-    padding: 3px 0px;
+    padding: $unit--size $spacing-zero;
     transition: all 0.3s ease;
 }
 
 .dropdownitems__link:hover {
-    color: rgb(252, 185, 65);
+    color: $light-orange;
 }
 
 .unit__item:hover>.dropdown,
@@ -88,16 +84,16 @@
 .dropdown__link {
     clear: both;
     width: 100%;
-    padding: 4px 4px;
+    padding: $spacing-dritem;
     transition: all 0.3s ease;
     text-decoration: none;
-    color: #777;
+    color: $light-grey;
 }
 
 .unit__item i {
-    font-size: $font-linksize--8px;
+    font-size: $font--little;
 }
 
 .prefences__access {
-    font-size: $font-linksize--10px;
+    font-size: $font--middle;
 }
