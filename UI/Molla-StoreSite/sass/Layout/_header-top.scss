@@ -2,13 +2,13 @@
     padding: $spacing-zero $id--size;
     .header-top {
         display: flex;
-        padding: $sapacing-top $spacing-zero;
+        padding: $spacing-top $spacing-zero;
         border-bottom: 1px solid $light-grey;
     }
     .contact {
         display: flex;
         font-size: $font--middle;
-        font-family: sans-serif;
+        font-family: $font-shrift-sans;
         color: $light-grey;
         .contact__number {
             margin: $spacing-zero $spacing-middle;
@@ -17,7 +17,7 @@
     .preferences {
         display: flex;
         margin-left: auto;
-        font-family: sans-serif;
+        font-family: $font-shrift-sans;
         color: $light-grey;
         .unit {
             display: flex;

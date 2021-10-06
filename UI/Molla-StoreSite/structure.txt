@@ -18,3 +18,24 @@
 
   <!-- HeaderTop end -->
 
+
+<!-- HeaderBottom start -->
+- HeaderBottom
+ -header-bottom
+  - Logo
+    -logo__img
+  -Search
+    - search__dropdown
+    -search__container
+     -form
+        -input (class name=search__container--input)
+        -button (icon) (class name= search__container--btn)
+  - View
+    - view__edit
+    - view__sub
+    -view__basket     
+
+
+
+
+<!-- HeaderBottom End -->

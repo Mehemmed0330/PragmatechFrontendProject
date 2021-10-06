@@ -1,4 +1,12 @@
+// HeaderTop padding
 $id--size:80px;
 $unit--size:3px;
 $spacing-dritem:$unit--size+1px;
-$sapacing-top:$unit--size+2px;
+$spacing-top:$unit--size+2px;
+// HeaderBottom padding
+$spacing-top-search:$unit--size+3px;
+$spacing-near-search:50px;
+$spacing-left-search:50px;
+$spacing-padding-size:$unit--size+7px;
+$spacing-btn-top:$unit--size+5px;
+$spacing-btn-near:$unit--size+12px;

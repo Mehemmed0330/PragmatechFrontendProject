@@ -1,0 +1,84 @@
+#HeaderBottom {
+    padding: $spacing-zero $id--size;
+    .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $font--middle;
+        font-family: $font-shrift-sans;
+        padding: $spacing-top $spacing-zero;
+        .logo {
+            width: $size-spacing-logo-width;
+            height: $size-spacing-logo-height;
+            .logo__img {
+                width: $size-spacing-logo-width;
+                height: $size-spacing-logo-height;
+            }
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            border: 1px solid $light-orange;
+            width: $size-spasing-percent-width;
+            .search__dropdown {
+                padding: $spacing-top-search $spacing-near-search;
+                font-size: 10px;
+                border-right: 1px solid grey;
+                .search__dropdown--name {
+                    width: $size-spasing-dropdown-width;
+                    color: $light-grey;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .search__container {
+                display: flex;
+                form {
+                    display: flex;
+                    .search__container--input {
+                        height: $size-spacing-search-height;
+                        width: $size-spacing-search-width;
+                        border: none;
+                        padding-left: $spacing-left-search;
+                        outline: none;
+                        font-size: 10px;
+                    }
+                    .search__container--btn {
+                        padding: $spacing-btn-top $spacing-btn-near;
+                        background-color: $light-orange;
+                        color: $light-white;
+                        outline: none;
+                        border: none;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            background-color: $dark-orange;
+                        }
+                    }
+                }
+            }
+        }
+        .view {
+            display: flex;
+            .view__choosen {
+                padding: $spacing-padding-size;
+                margin: $spacing-zero $spacing-little-bottom;
+                text-align: center;
+                line-height: $size-spacing-line-height;
+                transition: all 0.3s ease;
+                & i {
+                    font-size: 18px;
+                }
+                .view_choosen--title {
+                    color: $light-grey;
+                    transition: all 0.3s ease;
+                }
+                &:hover {
+                    color: $light-orange;
+                }
+                &:hover .view_choosen--title {
+                    color: $light-orange;
+                }
+            }
+        }
+    }
+}
