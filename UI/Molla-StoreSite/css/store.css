@@ -2304,24 +2304,14 @@ table {
   font-size: 10px;
 }
 
-#HeaderTop .preferences .unit__item {
+#HeaderTop .preferences .unit .unit__item {
   font-size: 10px;
   margin: 0px 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-#HeaderTop .preferences .unit__item:hover {
-  color: #fcb941;
-}
-
-.unit__item:hover .item__link,
-.item__link:hover,
-.dropdown__link:hover {
-  color: #fcb941;
-}
-
-.item__link {
+#HeaderTop .preferences .unit .unit__item .item__link {
   margin: 0px 8px;
   color: #777;
   text-decoration: none;
@@ -2329,7 +2319,23 @@ table {
   transition: all 0.3s ease;
 }
 
-.dropdown {
+#HeaderTop .preferences .unit .unit__item:hover {
+  color: #fcb941;
+}
+
+#HeaderTop .preferences .unit .unit__item:hover .item__link {
+  color: #fcb941;
+}
+
+#HeaderTop .preferences .unit .unit__item:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#HeaderTop .preferences .unit .unit__item .dropdown {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -2340,7 +2346,7 @@ table {
   z-index: 100;
 }
 
-.dropdownitems {
+#HeaderTop .preferences .unit .unit__item .dropdownitems {
   padding: 4px 0px;
   background-color: white;
   margin: 2px 5px;
@@ -2348,26 +2354,17 @@ table {
           box-shadow: 0px 0px 5px gainsboro;
 }
 
-.dropdownitems__link {
+#HeaderTop .preferences .unit .unit__item .dropdownitems .dropdownitems__link {
   padding: 3px 0px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.dropdownitems__link:hover {
+#HeaderTop .preferences .unit .unit__item .dropdownitems .dropdownitems__link:hover {
   color: #fcb941;
 }
 
-.unit__item:hover > .dropdown,
-.dropdown:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.dropdown__link {
+#HeaderTop .preferences .unit .unit__item .dropdownitems .dropdownitems__link .dropdown__link {
   clear: both;
   width: 100%;
   padding: 4px;
@@ -2377,11 +2374,31 @@ table {
   color: #777;
 }
 
-.unit__item i {
-  font-size: 8px;
+#HeaderTop .preferences .unit .unit__item .dropdownitems .dropdownitems__link .dropdown__link:hover {
+  color: #fcb941;
 }
 
-.prefences__access {
+#HeaderTop .preferences .unit .unit__item .dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#HeaderTop .preferences .prefences__access {
   font-size: 10px;
+}
+
+#HeaderTop .preferences .prefences__access .item__link {
+  margin: 0px 8px;
+  color: #777;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#HeaderTop .preferences .prefences__access .item__link:hover {
+  color: #fcb941;
 }
 /*# sourceMappingURL=store.css.map */

@@ -22,9 +22,75 @@
         .unit {
             display: flex;
             font-size: $font--middle;
-            &__item {
+            .unit__item {
                 font-size: $font--middle;
                 margin: $spacing-zero $spacing-middle;
+                transition: all 0.3s ease;
+                .item__link {
+                    margin: $spacing-zero $spacing-large;
+                    color: $light-grey;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+                &:hover {
+                    color: $light-orange;
+                }
+                &:hover .item__link {
+                    color: $light-orange;
+                }
+                &:hover .dropdown {
+                    visibility: visible;
+                    opacity: 1;
+                    display: block;
+                    transition: all 0.3s ease;
+                }
+                .dropdown {
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    transition: all 0.5s ease;
+                    margin-top: 1rem;
+                    margin: $spacing-middle $spacing-zero;
+                    z-index: 100;
+                    &items {
+                        padding: $spacing-dritem $spacing-zero;
+                        background-color: white;
+                        margin: $spacing-little $spacing-middle;
+                        box-shadow: 0px 0px $spacing-middle gainsboro;
+                        .dropdownitems__link {
+                            padding: $unit--size $spacing-zero;
+                            transition: all 0.3s ease;
+                            &:hover {
+                                color: $light-orange;
+                            }
+                            .dropdown__link {
+                                clear: both;
+                                width: 100%;
+                                padding: $spacing-dritem;
+                                transition: all 0.3s ease;
+                                text-decoration: none;
+                                color: $light-grey;
+                                &:hover {
+                                    color: $light-orange;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        visibility: visible;
+                        opacity: 1;
+                        display: block;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+        .prefences__access {
+            font-size: $font--middle;
+            .item__link {
+                margin: $spacing-zero $spacing-large;
+                color: $light-grey;
+                text-decoration: none;
                 transition: all 0.3s ease;
                 &:hover {
                     color: $light-orange;
@@ -34,66 +100,11 @@
     }
 }
 
-.unit__item:hover .item__link,
-.item__link:hover,
-.dropdown__link:hover {
-    color: $light-orange;
-}
-
-.item__link {
-    margin: $spacing-zero $spacing-large;
-    color: $light-grey;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.dropdown {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    margin: $spacing-middle $spacing-zero;
-    z-index: 100;
-}
-
-.dropdownitems {
-    padding: $spacing-dritem $spacing-zero;
-    background-color: white;
-    margin: $spacing-little $spacing-middle;
-    box-shadow: 0px 0px $spacing-middle gainsboro;
-}
-
-.dropdownitems__link {
-    padding: $unit--size $spacing-zero;
-    transition: all 0.3s ease;
-}
-
-.dropdownitems__link:hover {
-    color: $light-orange;
-}
-
-.unit__item:hover>.dropdown,
-.dropdown:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.dropdown__link {
-    clear: both;
-    width: 100%;
-    padding: $spacing-dritem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: $light-grey;
-}
-
-.unit__item i {
-    font-size: $font--little;
-}
-
-.prefences__access {
-    font-size: $font--middle;
-}
+// .unit__item:hover .item__link,
+// .item__link:hover,
+// .dropdown__link:hover {
+//     color: $light-orange;
+// }
+// .unit__item i {
+//     font-size: $font--little;
+// }
