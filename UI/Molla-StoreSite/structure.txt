@@ -1,5 +1,4 @@
 <!-- HeaderTop start -->
-
 - HeaderTop - header-top - contact - contact**icon - contact**number
 
           - preferences
@@ -16,7 +15,7 @@
                       - dropdownitems_link
               - prefences__access
 
-  <!-- HeaderTop end -->
+<!-- HeaderTop end -->
 
 
 <!-- HeaderBottom start -->
@@ -35,7 +34,37 @@
     - view__sub
     -view__basket     
 
-
-
-
 <!-- HeaderBottom End -->
+
+<!-- NavigationBar start -->
+-NavigationBar
+  -navbar-menu
+    -burger
+      -burger-icon
+      -burger-name
+    -menu
+      -unit
+        unit__item
+          -item__link
+      -unit
+        unit__item
+          -item__link
+     -unit
+        unit__item
+          -item__link
+     -unit
+        unit__item
+          -item__link
+    -about
+      - thing__about
+      
+
+<!-- NavigationBar end -->
+
+-CategoriesMenu
+  -categories-line
+    -categories
+      -categories__item
+        -item__link
+        
+

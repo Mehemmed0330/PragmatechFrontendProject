@@ -1,0 +1,73 @@
+#NavigationBar {
+    .navigation {
+        background-color: $averege-dark;
+        font-family: $font-shrift-sans;
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $spacing-zero $id--size;
+        }
+        .burger {
+            background-color: $light-orange;
+            padding: $spacing-padding-size;
+            width: $size-spacing-burger;
+            font-size: $font--large;
+            cursor: pointer;
+            .burger__elements {
+                display: flex;
+                .burger__name {
+                    padding: $spacing-zero $padding-burger;
+                }
+            }
+        }
+        .menu {
+            .unit {
+                display: flex;
+                padding: $spacing-zero $spacing-padding-unit;
+                .unit__item {
+                    padding: $spacing-padding-size $spacing-zero;
+                    margin: $spacing-zero $spacing-unit;
+                    font-size: $font--large;
+                    cursor: pointer;
+                    .item__link--different {
+                        color: $light-orange;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        & i {
+                            padding: $spacing-zero $spacing-near-i;
+                            color: white;
+                            color: $light-orange;
+                        }
+                    }
+                    .item__link {
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        & i {
+                            padding: $spacing-zero $spacing-near-i;
+                            color: white;
+                            transition: all 0.3s ease;
+                        }
+                        &:hover {
+                            color: $light-orange;
+                        }
+                        &:hover i {
+                            color: $light-orange;
+                        }
+                    }
+                }
+            }
+        }
+        .about {
+            padding: $padding-about $spacing-zero;
+            border-left: 1px solid white;
+            .about__thing {
+                color: white;
+                font-size: $font--firsd--middle;
+                padding-left: $spacing-dritem;
+                color: $light-orange;
+            }
+        }
+    }
+}
