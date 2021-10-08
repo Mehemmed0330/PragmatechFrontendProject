@@ -1,0 +1,32 @@
+#CategoriesMenuReclam {
+    padding: $spacing-zero $id--size;
+    font-family: $font-shrift-sans;
+    .categories-line {
+        width: $size-spacing-burger;
+        background-color: $light-white;
+        border: 1px solid $border-color;
+        .elements {
+            padding: $spacing-top;
+            .elements__item {
+                margin: $spacing-elements 0px;
+                .link-icon {
+                    display: flex;
+                }
+                .item__link {
+                    text-decoration: none;
+                    color: $light-grey;
+                    font-size: $font--firsd--middle;
+                    display: flex;
+                    justify-content: space-between;
+                    transition: all 0.3s ease;
+                }
+                &:hover {
+                    color: $light-orange;
+                }
+                &:hover .item__link {
+                    color: $light-orange;
+                }
+            }
+        }
+    }
+}

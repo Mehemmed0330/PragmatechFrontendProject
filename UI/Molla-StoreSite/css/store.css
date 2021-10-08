@@ -2624,4 +2624,51 @@ table {
   padding-left: 4px;
   color: #fcb941;
 }
+
+#CategoriesMenuReclam {
+  padding: 0px 80px;
+  font-family: sans-serif;
+}
+
+#CategoriesMenuReclam .categories-line {
+  width: 220px;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+}
+
+#CategoriesMenuReclam .categories-line .elements {
+  padding: 5px;
+}
+
+#CategoriesMenuReclam .categories-line .elements .elements__item {
+  margin: 12px 0px;
+}
+
+#CategoriesMenuReclam .categories-line .elements .elements__item .link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#CategoriesMenuReclam .categories-line .elements .elements__item .item__link {
+  text-decoration: none;
+  color: #777;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#CategoriesMenuReclam .categories-line .elements .elements__item:hover {
+  color: #fcb941;
+}
+
+#CategoriesMenuReclam .categories-line .elements .elements__item:hover .item__link {
+  color: #fcb941;
+}
 /*# sourceMappingURL=store.css.map */

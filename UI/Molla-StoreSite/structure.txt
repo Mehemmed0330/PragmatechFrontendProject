@@ -65,6 +65,6 @@
   -categories-line
     -categories
       -categories__item
-        -item__link
-        
+        -item__linkin 
+
 
