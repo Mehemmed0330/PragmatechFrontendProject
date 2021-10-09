@@ -1,30 +1,86 @@
 #CategoriesMenuReclam {
     padding: $spacing-zero $id--size;
     font-family: $font-shrift-sans;
-    .categories-line {
-        width: $size-spacing-burger;
-        background-color: $light-white;
-        border: 1px solid $border-color;
-        .elements {
-            padding: $spacing-top;
-            .elements__item {
-                margin: $spacing-elements 0px;
-                .link-icon {
-                    display: flex;
+    .categoriesreclam {
+        .categories-line {
+            width: $size-spacing-burger;
+            background-color: $light-white;
+            border: 1px solid $border-color;
+            .elements {
+                padding: $spacing-top;
+                .elements__item {
+                    margin: $spacing-elements 0px;
+                    .link-icon {
+                        display: flex;
+                    }
+                    .item__link {
+                        text-decoration: none;
+                        color: $light-grey;
+                        font-size: $font--firsd--middle;
+                        display: flex;
+                        justify-content: space-between;
+                        transition: all 0.3s ease;
+                    }
+                    &:hover {
+                        color: $light-orange;
+                    }
+                    &:hover .item__link {
+                        color: $light-orange;
+                    }
                 }
-                .item__link {
-                    text-decoration: none;
+            }
+        }
+        .reclam {
+            position: relative;
+            .reclam__image {
+                padding: 10px 15px;
+                position: relative;
+                & img {
+                    height: 340px;
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+            .reclam__about {
+                position: absolute;
+                padding: 20px;
+                width: 255px;
+                left: 10%;
+                transform: translateY(70px);
+                .reclam__about--title {
+                    font-size: 15px;
                     color: $light-grey;
-                    font-size: $font--firsd--middle;
-                    display: flex;
+                }
+                .reclam__about--main {
+                    font-size: 25px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    margin-top: 5px;
+                    color: white;
+                    line-height: 1.2em;
+                    & span {
+                        font-weight: 300;
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                }
+                .reclam__btn {
+                    background-color: $light-orange;
+                    border: none;
+                    width: 150px;
+                    padding: 10px 25px;
+                    margin-top: 10px;
                     justify-content: space-between;
-                    transition: all 0.3s ease;
+                    display: flex;
                 }
-                &:hover {
-                    color: $light-orange;
-                }
-                &:hover .item__link {
-                    color: $light-orange;
+            }
+        }
+        .banner {
+            padding: 15px;
+            &__image {
+                width: 100%;
+                & img {
+                    width: 100%;
                 }
             }
         }

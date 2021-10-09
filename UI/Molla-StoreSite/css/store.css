@@ -2630,27 +2630,27 @@ table {
   font-family: sans-serif;
 }
 
-#CategoriesMenuReclam .categories-line {
+#CategoriesMenuReclam .categoriesreclam .categories-line {
   width: 220px;
   background-color: white;
   border: 1px solid #cfcfcf;
 }
 
-#CategoriesMenuReclam .categories-line .elements {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements {
   padding: 5px;
 }
 
-#CategoriesMenuReclam .categories-line .elements .elements__item {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements .elements__item {
   margin: 12px 0px;
 }
 
-#CategoriesMenuReclam .categories-line .elements .elements__item .link-icon {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements .elements__item .link-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#CategoriesMenuReclam .categories-line .elements .elements__item .item__link {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements .elements__item .item__link {
   text-decoration: none;
   color: #777;
   font-size: 12px;
@@ -2664,11 +2664,81 @@ table {
   transition: all 0.3s ease;
 }
 
-#CategoriesMenuReclam .categories-line .elements .elements__item:hover {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements .elements__item:hover {
   color: #fcb941;
 }
 
-#CategoriesMenuReclam .categories-line .elements .elements__item:hover .item__link {
+#CategoriesMenuReclam .categoriesreclam .categories-line .elements .elements__item:hover .item__link {
   color: #fcb941;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam {
+  position: relative;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__image {
+  padding: 10px 15px;
+  position: relative;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__image img {
+  height: 340px;
+  width: 100%;
+  position: absolute;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__about {
+  position: absolute;
+  padding: 20px;
+  width: 255px;
+  left: 10%;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__about .reclam__about--title {
+  font-size: 15px;
+  color: #777;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__about .reclam__about--main {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  color: white;
+  line-height: 1.2em;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__about .reclam__about--main span {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#CategoriesMenuReclam .categoriesreclam .reclam .reclam__about .reclam__btn {
+  background-color: #fcb941;
+  border: none;
+  width: 150px;
+  padding: 10px 25px;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#CategoriesMenuReclam .categoriesreclam .banner {
+  padding: 15px;
+}
+
+#CategoriesMenuReclam .categoriesreclam .banner__image {
+  width: 100%;
+}
+
+#CategoriesMenuReclam .categoriesreclam .banner__image img {
+  width: 100%;
 }
 /*# sourceMappingURL=store.css.map */
