@@ -2677,7 +2677,7 @@ table {
 }
 
 #CategoriesMenuReclam .categoriesreclam .reclam .reclam__image {
-  padding: 10px 15px;
+  padding: 10px 25px;
   position: relative;
 }
 
@@ -2731,7 +2731,7 @@ table {
 }
 
 #CategoriesMenuReclam .categoriesreclam .banner {
-  padding: 15px;
+  padding: 10px;
 }
 
 #CategoriesMenuReclam .categoriesreclam .banner__image {
@@ -2739,6 +2739,78 @@ table {
 }
 
 #CategoriesMenuReclam .categoriesreclam .banner__image img {
-  width: 100%;
+  height: 350px;
+}
+
+#BannerReclam {
+  padding: 0px 80px;
+}
+
+#BannerReclam .banner-reclam {
+  font-family: sans-serif;
+}
+
+#BannerReclam .banner-reclam .banner .banner__image {
+  position: absolute;
+}
+
+#BannerReclam .banner-reclam .banner .banner__image img {
+  position: relative;
+  height: 300px;
+}
+
+#BannerReclam .banner-reclam .banner .banner__about {
+  position: absolute;
+  left: 20%;
+  font-size: 18px;
+}
+
+#BannerReclam .banner-reclam .banner .banner__about .banner__about--text {
+  margin-top: 30px;
+  color: white;
+}
+
+#BannerReclam .banner-reclam .banner .banner__about .banner__about--button {
+  margin-top: 10px;
+}
+
+#BannerReclam .banner-reclam .banner .banner__about .banner__about--button .btn__banner {
+  padding: 5px 20px;
+  background-color: #fcb941;
+  border: none;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__image {
+  padding-left: 20px;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__image img {
+  position: absolute;
+  height: 160px;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__about {
+  position: absolute;
+  padding: 40px;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__about .reclam__about--title {
+  color: white;
+  font-size: 14px;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__about .reclam_about--text {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 1.2em;
+}
+
+#BannerReclam .banner-reclam .reclam .reclam__about .btn__reclam {
+  margin-top: 10px;
+  padding: 5px 20px;
+  background-color: #fcb941;
+  border: none;
 }
 /*# sourceMappingURL=store.css.map */

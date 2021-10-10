@@ -33,10 +33,10 @@
         .reclam {
             position: relative;
             .reclam__image {
-                padding: 10px 15px;
+                padding: 10px 25px;
                 position: relative;
                 & img {
-                    height: 340px;
+                    height: $size-spacing-reclam-height;
                     width: 100%;
                     position: absolute;
                 }
@@ -44,11 +44,11 @@
             .reclam__about {
                 position: absolute;
                 padding: 20px;
-                width: 255px;
+                width: $size-spacing-about;
                 left: 10%;
                 transform: translateY(70px);
                 .reclam__about--title {
-                    font-size: 15px;
+                    font-size: $font--first--large;
                     color: $light-grey;
                 }
                 .reclam__about--main {
@@ -76,11 +76,11 @@
             }
         }
         .banner {
-            padding: 15px;
+            padding: 10px;
             &__image {
                 width: 100%;
                 & img {
-                    width: 100%;
+                    height: $size-spacing-banner-height;
                 }
             }
         }

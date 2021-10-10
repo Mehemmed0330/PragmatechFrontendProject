@@ -1,0 +1,62 @@
+#BannerReclam {
+    padding: $spacing-zero $id--size;
+    .banner-reclam {
+        font-family: sans-serif;
+        .banner {
+            .banner__image {
+                position: absolute;
+                & img {
+                    position: relative;
+                    height: $size-spacing-reclambanner-height;
+                }
+            }
+            .banner__about {
+                position: absolute;
+                left: 20%;
+                font-size: $font-second--large;
+                .banner__about--text {
+                    margin-top: 30px;
+                    color: white;
+                }
+                .banner__about--button {
+                    margin-top: 10px;
+                    .btn__banner {
+                        padding: 5px 20px;
+                        background-color: $light-orange;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .reclam {
+            .reclam__image {
+                padding-left: 20px;
+                & img {
+                    position: absolute;
+                    height: 160px;
+                }
+            }
+            .reclam__about {
+                position: absolute;
+                padding: 40px;
+                .reclam__about--title {
+                    color: white;
+                    font-size: 14px;
+                }
+                .reclam_about--text {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    line-height: 1.2em;
+                }
+                .btn__reclam {
+                    margin-top: 10px;
+                    padding: 5px 20px;
+                    background-color: $light-orange;
+                    border: none;
+                }
+            }
+        }
+    }
+}
