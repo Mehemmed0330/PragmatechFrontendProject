@@ -164,18 +164,47 @@
 // let slice = universitys.slice(0, 3).join("-")
 // document.write(slice)
 
-document.getElementById("btn").onclick = function() {
-    let top = document.getElementById("container-top").innerHTML;
-    let bottom = document.getElementById("container-bottom").innerHTML;
-    document.getElementById("container-top").innerHTML = bottom;
-    document.getElementById("container-bottom").innerHTML = top;
-}
-document.getElementById("btn-change").onclick = function() {
-    document.getElementsByClassName("text1")[0].innerHTML = "Mehemmed";
-    document.getElementsByClassName("text2")[0].innerHTML = "Aliyev";
+// document.getElementById("btn").onclick = function() {
+//     let top = document.getElementById("container-top").innerHTML;
+//     let bottom = document.getElementById("container-bottom").innerHTML;
+//     document.getElementById("container-top").innerHTML = bottom;
+//     document.getElementById("container-bottom").innerHTML = top;
+// }
+// document.getElementById("btn-change").onclick = function() {
+//     document.getElementsByClassName("text1")[0].innerHTML = "Mehemmed";
+//     document.getElementsByClassName("text2")[0].innerHTML = "Aliyev";
 
+// }
+// document.getElementById("color").onclick = function() {
+//     document.getElementById("container-top").style.color = "red";
+//     document.getElementById("container-bottom").style.backgroundColor = "blue"
+// }
+
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     hello() {
+//         document.write("Hello " + this.name);
+//     }
+// }
+// let person = new Person("Muhammad");
+// person.hello();
+
+function chapca() {
+    document.getElementById("chapca").value = Math.floor(Math.random() * 100);
 }
-document.getElementById("color").onclick = function() {
-    document.getElementById("container-top").style.color = "red";
-    document.getElementById("container-bottom").style.backgroundColor = "blue"
+chapca();
+
+function ChechTxt() {
+    let write = document.getElementById("number").value;
+    let password = document.getElementById("chapca").value;
+
+    if (write == password) {
+        alert("Duzgundur");
+    } else {
+        alert("Get sonra gelersen");
+    }
+    document.getElementById("number").value = "";
 }
