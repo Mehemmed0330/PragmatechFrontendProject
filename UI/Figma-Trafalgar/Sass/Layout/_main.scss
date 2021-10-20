@@ -1,0 +1,91 @@
+#Main {
+    position: relative;
+    padding: $main--padding 0px;
+    .container {
+        width: $container-width;
+        margin: 0px auto;
+        .main {
+            &__picture {
+                position: absolute;
+                z-index: $main-picture-index;
+                left: 0;
+                top: $main-picture-top;
+                & img {
+                    max-height: $main-picture-height;
+                }
+            }
+            .main__element {
+                position: absolute;
+                top: $main-element-top;
+                right: $main-element-right;
+            }
+            .main--top {
+                text-align: center;
+                .main__title {
+                    font-family: $family--mulish;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: $middle-14;
+                    line-height: $line-height-title;
+                    color: #000000;
+                }
+                .line {
+                    width: $line-height-title;
+                    height: $line-height;
+                    background: $dark-black;
+                    margin: $line--margin auto;
+                }
+                .main__about {
+                    font-family: $family--mulish;
+                    font-style: normal;
+                    font-weight: $weight-main;
+                    font-size: $little-2;
+                    line-height: $main-about-height;
+                    color: $gray;
+                    max-width: $main-about-width;
+                    margin: 0px auto;
+                }
+            }
+            .main__items {
+                margin-top: $items--margin;
+                z-index: $main-items-index;
+                position: relative;
+                .main__items--section {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: $main-section-margin;
+                    .main__item {
+                        width: $item-width;
+                        background-color: $white;
+                        box-shadow: 4px 11px 20px 0px #7d7987;
+                        .inner__item {
+                            padding: 0px $inner--padding;
+                            padding-bottom: $inner--bottom--paddin;
+                            .main__item--picture {
+                                margin-top: $item--picture--margin;
+                            }
+                            .main__item--title {
+                                font-family: $family--mulish;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: $middle-2;
+                                line-height: $line-height-title;
+                            }
+                            .main__item--about {
+                                font-family: $family--mulish;
+                                font-style: normal;
+                                font-weight: $weight-main;
+                                font-size: $little;
+                                line-height: $main-item-about-height;
+                            }
+                        }
+                    }
+                }
+            }
+            .main__button {
+                max-width: $button-width;
+                margin: $button--main--margin auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.btn-main {
+    border: 1.4px solid $light-blue;
+    box-sizing: border-box;
+    border-radius: $button-radius;
+    font-family: $family--mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $little-2;
+    line-height: $line-height-button;
+    padding: $button--top--padding $button1--near--padding;
+    background-color: $white;
+    color: $light-blue;
+}
+
+.btn-full {
+    background: $light-blue;
+    border-radius: $button-radius;
+    padding: $button--top--padding $button--near--padding;
+    font-family: $family--mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $little-2;
+    line-height: $line-height-button;
+    border: none;
+    color: $white;
+}

@@ -1,0 +1,75 @@
+#Footer {
+    margin-top: 200px;
+    position: relative;
+    .footer__elemet2 {
+        position: absolute;
+        z-index: 100;
+        top: -20%;
+        right: 0%;
+    }
+    .footer {
+        background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 140px;
+        position: relative;
+        z-index: 1000;
+        .footer__element {
+            position: absolute;
+            left: -2%;
+            bottom: 5%;
+        }
+        .footer__section--left {
+            .fotter__text {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+                max-width: 391px;
+                margin-top: 22px;
+            }
+            .footer__corparation {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-top: 31px;
+            }
+        }
+        .footer__section--right {
+            min-width: 550px;
+            .footer__right {
+                display: flex;
+                justify-content: space-between;
+                .footer__right--part {
+                    .right__part--title {
+                        font-family: Mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 60px;
+                        color: #FFFFFF;
+                    }
+                    .right--part {
+                        .right--part__item {
+                            margin: 5px 0px;
+                            .right__link {
+                                font-family: Mulish;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 38px;
+                                color: #FFFFFF;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

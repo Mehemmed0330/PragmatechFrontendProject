@@ -1,0 +1,92 @@
+#ArticlesItems {
+    margin-top: $id--top;
+    position: relative;
+    z-index: 1000;
+    .articles__element {
+        position: absolute;
+        z-index: 100;
+        top: 10%;
+        left: 5%;
+    }
+    .articles__images {
+        position: absolute;
+        z-index: 100;
+        right: 0;
+    }
+    .container {
+        width: $container-width;
+        margin: 0px auto;
+        .articles-items {
+            position: relative;
+            z-index: 1000;
+            .articles__title {
+                font-family: $family--mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: $middle-14;
+                line-height: $line-height-title;
+                color: $dark-black;
+                text-align: center;
+            }
+            .line {
+                background: $dark-black;
+                border-radius: $line-radius;
+                width: $line-height-title;
+                height: $line-height;
+                margin: $line--margin auto;
+            }
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                margin-top: $cards--margin;
+            }
+            .cards__item {
+                max-width: $cards-item-width;
+                border-radius: $cards-radius;
+                box-shadow: 5px 20px 20px 0px #7d7987;
+                background-color: white;
+                .cards__item--image {
+                    object-fit: cover;
+                    border-radius: $cards-radius;
+                    & img {
+                        width: $cards-item-width;
+                        object-fit: cover;
+                        border-radius: $cards-radius;
+                    }
+                }
+                .item__texts {
+                    padding: $item--text--padding;
+                    .item__texts--title {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: $little-5;
+                        line-height: $line-height-main;
+                        color: $dark-black;
+                        max-width: $item-text;
+                    }
+                    .item__texts--about {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: $weight-main;
+                        font-size: $little;
+                        line-height: 28px;
+                        color: $gray;
+                    }
+                    .item__texts--link {
+                        margin-top: 25px;
+                        color: $light-blue;
+                        display: flex;
+                        max-width: 105px;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        .describe__about--button {
+            margin: 0px auto;
+            max-width: 300px;
+            margin-top: 72px;
+        }
+    }
+}
