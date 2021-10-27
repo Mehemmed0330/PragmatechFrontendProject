@@ -355,6 +355,11 @@ body {
 
 .upper__item {
     width: 28%;
+    transition: all 0.6s ease;
+}
+
+.upper__item:hover {
+    transform: translateY(-5px);
 }
 
 .icon {
@@ -417,4 +422,106 @@ body {
     border-radius: 50%;
     font-size: 20px;
     color: rgb(96, 69, 67);
+}
+
+#ProfessionItems {
+    margin-top: 50px;
+}
+
+.profession__top {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.profession__title--top {
+    margin: 0px auto;
+    width: 30%;
+    text-align: center;
+}
+
+.title--top {
+    background-color: rgb(15, 15, 17);
+    padding: 5px 0px;
+    border-radius: 2px;
+}
+
+.title--top h1 {
+    font-size: 14px;
+    background: linear-gradient(to right, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343) 95%/200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.profession__title {
+    margin-top: 15px;
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.profession__text {
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.text {
+    color: rgb(132, 132, 132);
+    text-align: center;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5em;
+}
+
+.profession__filter {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__item {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.filter__item:hover {
+    background-color: rgb(5, 157, 255);
+}
+
+.filter__item:hover a,
+.filter__item {
+    color: white;
+}
+
+.filter__item--bgc {
+    background-color: rgb(5, 157, 255);
+    color: white !important;
+}
+
+.filter__item--link {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(132, 132, 132);
+}
+
+.filter__item--bgc {
+    background-color: rgb(5, 157, 255);
+}
+
+.filter__item--link--color {
+    color: white;
 }
