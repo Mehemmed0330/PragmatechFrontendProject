@@ -6,12 +6,12 @@ body {
     width: 50px;
     height: 0px;
     border-radius: 50%;
-    box-shadow: 0 0 0px 0px #0ff, 0 0 8px 0px #0ff, 0 0 125px 56px #0ff;
+    box-shadow: 0 0 0px 0px #00b7ff, 0 0 225px 48px #00a7ffeb, 0 0 281px 41px #00d0ffeb;
     background-color: rgb(81, 255, 241);
     position: fixed;
     border: none;
     top: 50%;
-    left: 10%;
+    left: 0%;
 }
 
 #BusinessConsulting {
@@ -337,6 +337,66 @@ body {
     padding: 0px 5px;
 }
 
-.diw {
-    height: 100vh;
+#Upperİtems {
+    margin-top: 90px;
+}
+
+.items {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+}
+
+.upper__item {
+    border: 1px solid white;
+    width: 28%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    /* border-radius: 50%; */
+}
+
+.icon i {
+    padding: 25px;
+    background-color: rgb(1, 24, 39);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(5, 156, 254);
+}
+
+.upper__item--title {
+    text-align: center;
+    color: white;
+    margin: 19px 0px;
+    font-size: 24px;
+}
+
+.item__link {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.upper__item--about {
+    text-align: center;
+    color: rgb(53, 54, 56);
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2em;
+}
+
+.icon-middle {
+    padding: 25px;
+    background-color: rgb(25, 3, 1);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(250, 83, 67);
 }
