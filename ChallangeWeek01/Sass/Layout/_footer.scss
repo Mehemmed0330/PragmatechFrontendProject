@@ -1,0 +1,119 @@
+#Footer {
+    margin-top: 200px;
+    position: relative;
+    .footer__elemet2 {
+        position: absolute;
+        z-index: 100;
+        top: -20%;
+        right: 0%;
+    }
+    .footer {
+        background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 70px;
+        position: relative;
+        z-index: 1000;
+        @include mobile {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        @include tablet {
+            padding: 20px;
+        }
+        @include laptop {
+            padding: 20px;
+        }
+        .footer__element {
+            position: absolute;
+            left: -2%;
+            bottom: 5%;
+        }
+        .footer__section--left {
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                max-width: 300px;
+                ;
+            }
+            .fotter__text {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+                max-width: 391px;
+                margin-top: 22px;
+            }
+            .footer__corparation {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-top: 31px;
+            }
+        }
+        .footer__section--right {
+            width: 45%;
+            @include mobile {
+                max-width: 375px !important;
+            }
+            @include tablet {
+                max-width: 350px;
+            }
+            @include laptop {
+                width: 400px;
+            }
+            @include desktop {
+                width: 450px;
+            }
+            @include extra {
+                width: 48%;
+            }
+            .footer__right {
+                display: flex;
+                justify-content: space-between;
+                @include mobile {
+                    display: block;
+                    max-width: 375px;
+                }
+                @include tablet {
+                    width: 350px;
+                }
+                .footer__right--part {
+                    .right__part--title {
+                        font-family: Mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 60px;
+                        color: #FFFFFF;
+                    }
+                    .right--part {
+                        .right--part__item {
+                            margin: 5px 0px;
+                            .right__link {
+                                font-family: Mulish;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 38px;
+                                color: #FFFFFF;
+                                text-decoration: none;
+                                @include tablet {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

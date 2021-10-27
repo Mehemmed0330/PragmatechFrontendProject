@@ -1,0 +1,156 @@
+#PersonalSlider {
+    @include mobile {
+        display: none;
+    }
+    margin-top: $container--margin;
+    .container {
+        width: $container-width;
+        margin: 0px auto;
+        position: relative;
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
+        @include laptop {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+        @include extra {
+            width: 100%;
+        }
+        .slider__element--under {
+            position: absolute;
+            z-index: $main-picture-index;
+            left: $slider-element-left;
+            top: $slider-element-top;
+        }
+        .slider {
+            background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+            border-radius: $picture-radius;
+            padding: $slider--padding 0px;
+            position: relative;
+            z-index: $main-items-index;
+            @include extra {
+                width: 90%;
+                margin: 0px auto;
+            }
+            .slider__element {
+                position: absolute;
+                right: $slider-element-left;
+                top: $slider-element-right;
+                @include tablet {
+                    display: none;
+                }
+                @include laptop {
+                    display: none;
+                }
+                @include desktop {
+                    display: none;
+                }
+                @include extra {
+                    display: none;
+                }
+            }
+            .slider-personal {
+                .slider__title {
+                    padding-top: $slider--title--paddind;
+                    .slider__title--top {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: $middle-14;
+                        line-height: $line-height-slider;
+                        color: $white;
+                        text-align: center;
+                    }
+                    .slider__line {
+                        background: $white;
+                        border-radius: $line-radius;
+                        width: $line-height-title;
+                        height: $line-height;
+                        margin: $main--margin auto;
+                    }
+                }
+                .personal__section--comment {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: $personal-section-width;
+                    margin: $personal--section--margin auto;
+                    .personal__section {
+                        display: flex;
+                        align-items: center;
+                        min-width: $item-width;
+                        justify-content: space-between;
+                        @include tablet {
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                        .person__image {
+                            border-radius: $percent-radius;
+                            border: 3px solid $white;
+                            & img {
+                                border-radius: $percent-radius;
+                            }
+                        }
+                        .person__about {
+                            max-width: $person-about;
+                            .person__name {
+                                font-family: $family--mulish;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: $middle;
+                                line-height: $line-height-slider;
+                                color: $white;
+                            }
+                            .person__work {
+                                font-family: $family--mulish;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: $little-2;
+                                line-height: $line-height-slider;
+                                color: rgba(255, 255, 255, 0.85);
+                            }
+                        }
+                    }
+                    .person__comment {
+                        max-width: $comment-width;
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: $little-3;
+                        line-height: $main-about-height;
+                        color: rgba(255, 255, 255, 0.9);
+                        @include tablet {
+                            width: 376px;
+                        }
+                    }
+                }
+            }
+        }
+        .direction {
+            display: flex;
+            max-width: $direction-width;
+            justify-content: space-between;
+            margin: $direction--margin auto;
+            .left__arrow {
+                color: $light-blue-light;
+            }
+            .drops {
+                display: flex;
+                min-width: $drops-width;
+                justify-content: space-between;
+                & i {
+                    font-size: $mini;
+                    color: $light-blue-light;
+                }
+            }
+            .right__arrow {
+                color: $light-blue-light;
+            }
+        }
+    }
+}

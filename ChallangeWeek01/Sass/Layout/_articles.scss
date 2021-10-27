@@ -1,0 +1,158 @@
+#ArticlesItems {
+    margin-top: $id--top;
+    position: relative;
+    z-index: 1000;
+    .articles__element {
+        position: absolute;
+        z-index: 100;
+        top: 10%;
+        left: 5%;
+    }
+    .articles__images {
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        @include mobile {
+            display: none;
+        }
+    }
+    .container {
+        width: $container-width;
+        margin: 0px auto;
+        @include mobile {
+            width: 100%;
+            margin: 0px auto;
+        }
+        @include tablet {
+            width: 100%;
+        }
+        @include laptop {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+        @include extra {
+            width: 100%;
+        }
+        .articles-items {
+            position: relative;
+            z-index: 1000;
+            .articles__title {
+                font-family: $family--mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: $middle-14;
+                line-height: $line-height-title;
+                color: $dark-black;
+                text-align: center;
+            }
+            .line {
+                background: $dark-black;
+                border-radius: $line-radius;
+                width: $line-height-title;
+                height: $line-height;
+                margin: $line--margin auto;
+            }
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                margin-top: $cards--margin;
+                @include mobile {
+                    display: block;
+                }
+                @include tablet {
+                    display: block;
+                }
+                @include laptop {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                @include desktop {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                @include extra {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            .cards__item {
+                max-width: $cards-item-width;
+                border-radius: $cards-radius;
+                box-shadow: 5px 20px 20px 0px #7d7987;
+                background-color: white;
+                @include mobile {
+                    max-width: 270px;
+                    margin: 30px auto;
+                }
+                @include tablet {
+                    margin: 30px auto;
+                }
+                @include desktop {
+                    width: 30%;
+                }
+                @include laptop {
+                    width: 30%;
+                }
+                .cards__item--image {
+                    object-fit: cover;
+                    border-radius: $cards-radius;
+                    & img {
+                        width: $cards-item-width;
+                        object-fit: cover;
+                        border-radius: $cards-radius;
+                        @include mobile {
+                            max-width: 100%;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                        @include laptop {
+                            width: 100%;
+                        }
+                    }
+                }
+                .item__texts {
+                    padding: $item--text--padding;
+                    .item__texts--title {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: $little-5;
+                        line-height: $line-height-main;
+                        color: $dark-black;
+                        max-width: $item-text;
+                    }
+                    .item__texts--about {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: $weight-main;
+                        font-size: $little;
+                        line-height: 28px;
+                        color: $gray;
+                    }
+                    .item__texts--link {
+                        margin-top: 25px;
+                        color: $light-blue;
+                        display: flex;
+                        max-width: 105px;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        .describe__about--button {
+            margin: 0px auto;
+            max-width: 300px;
+            margin-top: 72px;
+            @include mobile {
+                display: flex;
+                justify-content: center;
+            }
+            @include tablet {
+                text-align: center;
+            }
+        }
+    }
+}

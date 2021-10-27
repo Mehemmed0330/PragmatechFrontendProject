@@ -1,0 +1,84 @@
+#Header {
+    .container {
+        width: $container-width;
+        margin: 0px auto;
+        padding: $container--padding 0px;
+        @include mobile {
+            width: 100%;
+            margin: 0px auto;
+        }
+        @include tablet {
+            width: 100%;
+        }
+        @include laptop {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+        @include extra {
+            width: 100%;
+        }
+        .head {
+            display: flex;
+            align-items: center;
+            @include mobile {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            @include tablet {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .head__logo {
+                margin-left: 20px;
+            }
+            .burger {
+                display: none;
+                font-size: 24px;
+                @include mobile {
+                    display: block;
+                }
+                @include tablet {
+                    display: block;
+                }
+            }
+            .navbar {
+                margin-left: auto;
+                @include mobile {
+                    display: none;
+                }
+                @include tablet {
+                    display: none;
+                }
+                .links {
+                    display: flex;
+                    &__link {
+                        margin: 0px $link--margin;
+                        @include laptop {
+                            margin: 0px 20px;
+                        }
+                        .links__link--type {
+                            font-size: $little-2;
+                            font-family: $family--mulish;
+                            font-weight: bold;
+                            text-decoration: none;
+                            color: $gray;
+                        }
+                        // Special Home link start
+                        .link__type--home {
+                            font-size: $little-2;
+                            font-family: $family--mulish;
+                            font-weight: bold;
+                            text-decoration: none;
+                            color: $black;
+                        }
+                        // Special Home link end
+                    }
+                }
+            }
+        }
+    }
+}

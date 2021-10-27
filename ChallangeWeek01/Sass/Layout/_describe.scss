@@ -1,0 +1,114 @@
+#MainDescribe {
+    position: relative;
+    .container {
+        max-width: $container-width;
+        margin: 0px auto;
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
+        @include laptop {
+            width: 100%;
+        }
+        @include extra {
+            width: 100%;
+        }
+        .main__describe-size {
+            margin-top: 229px;
+        }
+        .describe {
+            .describe__element {
+                position: absolute;
+                left: 0;
+                top: 0;
+                & img {
+                    max-height: $element-height;
+                }
+            }
+            .describe__main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include mobile {
+                    display: block;
+                }
+                @include tablet {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                @include laptop {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                @include desktop {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                @include extra {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .describe__about {
+                    @include mobile {
+                        text-align: center;
+                    }
+                    @include tablet {
+                        width: 300px;
+                    }
+                    @include laptop {
+                        width: 320px;
+                    }
+                    .describe__about--title {
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: $big;
+                        line-height: $line-height-title;
+                    }
+                    .describe__title--size {
+                        font-size: $middle-14;
+                    }
+                    .describe__about--main {
+                        margin-top: $main--margin;
+                        max-width: $main-width;
+                        font-family: $family--mulish;
+                        font-style: normal;
+                        font-weight: $weight-main;
+                        font-size: $little-5;
+                        line-height: $line-height-main;
+                    }
+                    .describe__about--size {
+                        font-size: $middle-2;
+                    }
+                    .describe__about--button {
+                        margin-top: $button--margin;
+                    }
+                }
+                .describe__picture {
+                    @include mobile {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    & img {
+                        max-height: $picture-height;
+                        @include mobile {
+                            height: 200px;
+                            margin: 60px 0px;
+                        }
+                        @include tablet {
+                            height: 270px;
+                        }
+                        @include laptop {
+                            height: 350px;
+                        }
+                    }
+                    .img-size {
+                        max-height: $picture-size-height;
+                    }
+                }
+            }
+        }
+    }
+}
