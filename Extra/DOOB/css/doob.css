@@ -525,3 +525,55 @@ body {
 .filter__item--link--color {
     color: white;
 }
+
+.profession__categories {
+    margin-top: 40px;
+}
+
+.categories__items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profession__item {
+    width: 30%;
+    transition: all .6s ease;
+}
+
+.profession__item:hover {
+    transform: translateY(-5px);
+}
+
+.profession__item--img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profession__item--img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profession__item--title {
+    margin-top: 10px;
+}
+
+.profession__link {
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.profession__link:hover {
+    color: rgb(5, 157, 255);
+}
+
+.profession__item--name {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(132, 132, 132);
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+}
