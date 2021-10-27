@@ -338,7 +338,7 @@ body {
 }
 
 #Upperİtems {
-    margin-top: 90px;
+    /* margin-top: 90px; */
 }
 
 .items {
@@ -349,11 +349,11 @@ body {
 .upper {
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
+    padding: 90px 0px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
 }
 
 .upper__item {
-    border: 1px solid white;
     width: 28%;
 }
 
@@ -390,13 +390,31 @@ body {
     color: rgb(53, 54, 56);
     font-size: 16px;
     font-family: "Inter", sans-serif;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 .icon-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-middle i {
     padding: 25px;
     background-color: rgb(25, 3, 1);
     border-radius: 50%;
     font-size: 20px;
     color: rgb(250, 83, 67);
+}
+
+.icon-right {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-right i {
+    padding: 25px;
+    background-color: rgb(21, 11, 64);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(96, 69, 67);
 }
