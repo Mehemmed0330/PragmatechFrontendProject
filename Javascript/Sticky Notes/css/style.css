@@ -1,0 +1,61 @@
+#NotesArea {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.container {
+    background-color: #c68c53a8;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__icon {
+    font-size: 36px;
+    color: #c2ff3d;
+}
+
+.logo__name {
+    font-size: 36px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.notes__headar {
+    width: 90%;
+    margin: 0px auto;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.button__add {
+    margin-left: auto;
+}
+
+.btn__add {
+    padding: 10px 10px;
+    font-family: 'Architects Daughter', cursive;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-area {
+    position: relative;
+}
+
+.modal__container {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.modal__text {
+    width: 100%;
+    position: fixed;
+    background-color: #c68c53a8;
+}
