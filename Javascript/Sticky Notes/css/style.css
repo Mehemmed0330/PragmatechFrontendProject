@@ -61,12 +61,12 @@
     position: fixed;
     z-index: 100;
     top: 0%;
-    display: none;
+    display: block;
 }
 
 .modal__text {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 40%;
 }
 
@@ -86,4 +86,13 @@ form {
 textarea {
     outline: none;
     border: none;
+    padding: 45px 20px;
+    font-size: 25px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.textarea {
+    position: absolute;
+    z-index: 10000;
+    border: 1px solid black;
 }
