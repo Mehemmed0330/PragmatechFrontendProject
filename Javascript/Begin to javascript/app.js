@@ -192,22 +192,22 @@
 // let person = new Person("Muhammad");
 // person.hello();
 
-// function chapca() {
-//     document.getElementById("chapca").value = Math.floor(Math.random() * 100);
-// }
-// chapca();
+function chapca() {
+    document.getElementById("chapca").value = Math.floor(Math.random() * 100);
+}
+chapca();
 
-// function ChechTxt() {
-//     let write = document.getElementById("number").value;
-//     let password = document.getElementById("chapca").value;
+function ChechTxt() {
+    let write = document.getElementById("number").value;
+    let password = document.getElementById("chapca").value;
 
-//     if (write == password) {
-//         alert("Duzgundur");
-//     } else {
-//         alert("Get sonra gelersen");
-//     }
-//     document.getElementById("number").value = "";
-// }
+    if (write == password) {
+        alert("Duzgundur");
+    } else {
+        alert("Get sonra gelersen");
+    }
+    document.getElementById("number").value = "";
+}
 
 function goTo(page, url) {
     if (confirm(page + "" + "sehifesine kecid edirsiz")) {
