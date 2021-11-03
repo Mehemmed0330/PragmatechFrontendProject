@@ -25,10 +25,17 @@ function Close() {
 let formm = document.querySelector("#Form");
 formm.addEventListener("submit", (e) => {
     e.preventDefault();
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("CommendAdd").value;
-    var t = document.createTextNode(inputValue);
+    let li = document.createElement("li");
+    let inputValue = document.getElementById("CommendAdd").value;
+    let t = document.createTextNode(inputValue);
     li.appendChild(t);
+
     document.getElementById("myUL").appendChild(li);
     document.getElementById("CommendAdd").value;
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
 })
+var randomColor = generateRandomColor();
