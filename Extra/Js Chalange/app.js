@@ -54,14 +54,33 @@
 
 
 
-let computer = {
-    isim: "Lenova",
-    hz: 2.4,
-}
-let asus = {};
+// let computer = {
+//     isim: "Lenova",
+//     hz: 2.4,
+// }
+// let asus = {};
 
-for (tech in computer) {
-    asus[tech] = computer[tech];
-}
-asus.hz = 1;
-console.log(computer.hz)
+// for (tech in computer) {
+//     asus[tech] = computer[tech];
+// }
+// asus.hz = 1;
+// console.log(computer.hz)
+
+
+
+// function User(name) {
+//     this.name = name;
+// };
+// let user = new User("Muhammad");
+// console.log(user.name)
+
+
+
+// function User(name) {
+//     this.name = name;
+//     this.findName = function() {
+//         console.log("My name is" + this.name)
+//     }
+// }
+// let user = new User("Muhammad")
+// user.findName();
