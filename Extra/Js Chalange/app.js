@@ -84,3 +84,26 @@
 // }
 // let user = new User("Muhammad")
 // user.findName();
+
+
+// let animal = {
+//     jump: true
+// }
+// let bear = {
+//     power: true
+// }
+// bear.__proto__ = animal;
+// console.log(bear.jump)
+
+
+let animal = {
+    eates: true,
+    walk() {
+        alert("Can")
+    }
+}
+let anm = {
+    jump: true,
+    __proto__: animal
+}
+anm.walk();
