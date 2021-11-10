@@ -40,6 +40,10 @@ body {
     margin-top: 30px;
 }
 
+#btn:focus:not(:focus-visible) {
+    outline: none;
+}
+
 #btn {
     /* padding: 15px 60px;
     background-color: lightblue;
@@ -63,7 +67,7 @@ body {
 
 .front {
     display: block;
-    padding: 12px 42px;
+    padding: 8px 46px;
     border-radius: 12px;
     font-size: 1.25rem;
     background: hsl(345deg 100% 47%);
@@ -71,6 +75,6 @@ body {
     transform: translateY(-6px);
 }
 
-.pushable:active .front {
+#btn:active .front {
     transform: translateY(-2px);
 }
