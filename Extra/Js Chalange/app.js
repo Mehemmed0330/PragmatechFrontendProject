@@ -76,24 +76,24 @@
 
 
 
-// function User(name) {
-//     this.name = name;
-//     this.findName = function() {
-//         console.log("My name is" + this.name)
-//     }
-// }
-// let user = new User("Muhammad")
-// user.findName();
+function User(name) {
+    this.name = name;
+    this.findName = function() {
+        console.log("My name is" + this.name)
+    }
+}
+let user = new User("Muhammad")
+user.findName();
 
 
-// let animal = {
-//     jump: true
-// }
-// let bear = {
-//     power: true
-// }
-// bear.__proto__ = animal;
-// console.log(bear.jump)
+let animal = {
+    jump: true
+}
+let bear = {
+    power: true
+}
+bear.__proto__ = animal;
+console.log(bear.jump)
 
 
 let animal = {
