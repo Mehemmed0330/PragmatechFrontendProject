@@ -89,3 +89,11 @@
 - pc -picas (1pc = 12 pt)
 - pt -points (1pt = 1/72 of 1in)
 - px -pixels (1px = 1/96th of 1in)
+
+- em - Elementin şrift ölçüsünə nisbəti (2em cari şriftin 2 dəfə böyüklüyü deməkdir) paraqraf sətirləri arasında məsafə
+- cm - santimetr
+- in -inches (1in = 96px = 2.54cm)
+- mm -millimetr
+- pc -picas (1pc = 12 pt)
+- pt -points (1pt = 1/72 of 1in)
+- px -pixels (1px = 1/96th of 1in)
