@@ -90,10 +90,13 @@
 - pt -points (1pt = 1/72 of 1in)
 - px -pixels (1px = 1/96th of 1in)
 
-- em - Elementin şrift ölçüsünə nisbəti (2em cari şriftin 2 dəfə böyüklüyü deməkdir) paraqraf sətirləri arasında məsafə
-- cm - santimetr
-- in -inches (1in = 96px = 2.54cm)
-- mm -millimetr
-- pc -picas (1pc = 12 pt)
-- pt -points (1pt = 1/72 of 1in)
-- px -pixels (1px = 1/96th of 1in)
+# JavaScript Interview Question and Answer
+
+## 1. Typescript nədir?
+
+Typescript 2012-ci ildə Microsoft tərəfindən qurulmuş və dəstəklən proqramlaşdırma dilidir.Paradigma göstəriciləri: Functional,Object Orianted,Imperative - olmasıdır.
+Typescriptdə olan kod sintaksisi Javascriptlə eynidir və daha da artığığır.Proqramlaşdırma zamanı Typescriptdə yazılan kodlar .![Javascriptə çevrilir](https://www.tnado.com/includes/medias/2018/11/tnado-seo-cms-blog-typescript-javascript.png).
+Javascript -ə aid olan özəlliklər Typescript -də var.Ancaq Typescript -ə aid olan özəlliklər Javascript -də yoxdu.Typescript Javascript -in genişləndirilmiş versionudu.Və hər Javascrit kodu bir Typescript kodudur.Ancaq o kodlar yığılıb işlədilməyi müddətdə Javascript kodu yox Typescript kodudur.
+TypeScript Javascript -in bütün kitabxanalarında , framework -lərində işləyir.
+Javascript interpreted bir dildir yəni kodda yanlış hissə olduqda kodun yoxlanılmasını dayandırır və ümumi kodda düzgün hissə də olsa belə o hissəni göstərmir.Ancaq Typescript kodu işə salmadan səhvi yoxlayır və o səhv üçün bir həll yolu verir.[Şəkilə baxsaq](<(https://www.tnado.com/includes/medias/2018/11/tnado-seo-cms-blog-typescript-javascript.png)>)
+Typescript yuxarıda da yazdığımız kimi obyekt yönlü dildir və bu bizə proqramlaşdırmada mirasalma, modulyar və.s kimi özəlliklərlə işləməyə imkan verir.
