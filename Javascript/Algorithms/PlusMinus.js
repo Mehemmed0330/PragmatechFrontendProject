@@ -10,8 +10,8 @@ function plusMinus(arr) {
     const dividePlus = lenghtPlus / lengthArr;
     const divideMinus = lenghtMinus / lengthArr;
     const divideZero = lenghtZero / lengthArr;
-    console.log(dividePlus);
-    console.log(divideMinus);
-    console.log(divideZero);
+    console.log(dividePlus.toFixed(6));
+    console.log(divideMinus.toFixed(6));
+    console.log(divideZero.toFixed(6));
 }
 plusMinus([-4, 3, -9, 0, 4, 1]);
