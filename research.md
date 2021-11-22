@@ -124,3 +124,20 @@ Method istifadə etmədən ən böyük və ən kiçik elementin tapılması.
 Sadə olaraq loop və şərt operatorlarından istifadə edərək ilk öncə döngü içərisinə salırıq daha sonra şərtdə array -in içərisindəki elementlərin şərti olaraq verdiyimiz max -dan böyük olduğunu göstərib bunun əsasında da çıxacaq nəticənin həmin array -in içərisindən bir dəyər olduğunu göstəririk.
 Ancaq isbatlanmışdır ki əgər array daxilində milyon element olarsa və hansı üsulla yazılarsa hesablama daha sürətli baş verər deyə yoxlama aparılmışdır.Nəticələr isə çox maraqlıdır.Deməli Es6 ilə proqramlaşdırdıqda 2.214 saniyə müddətində tamamlanır(İlk şəkildəki kimi) və təbii ki başqa yollarla da sınanıb və demək olar ki nəticə olub.Ancaq bir yer istisna.
 Burdan belə nəticəyə gəlirik ki massivdəki elementi nə qədər artırsaq hesablama bir o qədər yavaşlayır və bu da nəticə.
+
+## What is the difference between java and javascript?
+
+Həm proqramlaşdırmaya giriş etmək istəyən insanlar həm də ümumiyyətlə texologiyadan uzaq olan insanlar həmişə Java və Javascript -i qarışıq salırlar.Ya da eyni proqramlaşdırma dili zənn edirlər.Yeri gəlmişkən buna misal olaraq GetContact -da mənim adımı "Məhəmməd Java" olaraq qeyd ediblər.Halbuki mən Javascript ilə məşğulam)).İndi isə gəlin fərqləri araşdıraq.Xüsusiyyətlərinə keçməmişdən əvvəl ümumi məlumat verim.
+
+### Javascript
+
+İnternetin ilk 1995-ci ildə Netscape şirkəti tərəfindən, Sun şirkətinin dəstəyi ilə hazırlanmış NN24-də istifadə olunan AD bundan sonra JavaScript adlandırılması ilə açıqlanma verildi. Buna qədər isə bu alqoritmik dil LiveScript adlandırılırdı. Bu gözlənilməz addım kifayət qədər problemlər yaratdı. Beləki, Sun şirkətinin JAVA AD-nə heç bir aiddiyyatı olmayan JavaScript-i JAVA-nın alt-çoxluğu kimi qəbul edənlərin sayı çoxaldı.JavaScript - HTML səhifəyə inteqrasiya olunaraq, bu səhifə ilə istifadəçi arasındakı interfeysə əlavə funksional imkanlar verən alqoritmik dildir.
+Təbii ki bir çox framework(Jquery) və library(React.js, Angular.js, Node.js, React Native.js və.s) kimi bir çox növləri vardır.
+
+### Java
+
+Java ilk dəfə olaraq Sun Microsystems tərəfindən 1995-ci ildə proqramlaşdırma dili kimi istifadəyə verilmişdir.Java -nın mahiyyəti çox böyükdür.Belə ki Java yükləmədiyimiz təqdirdə işlədə bilməyəcəyimiz proqramlar çoxdur və bunun sayı hər il getdikcə daha da artır.Java sürətli, təhlükəsiz və güvənilən bir proqramlaşdırma dilidir.Diz üstü kompüterlərdə data bazayada, ən sürətli oyun kompöterlərində, telefonlardan internetə qədər Java demək olar ki hər yerdədir.
+
+### Fərqləri nələrdir?
+
+İlk öncə işlənmə yerlərinə görə baxsaq Java kredit kartı proqramlanması mağazalarda malın qiymətinin hesablanması sisteminin proqramlanması kompüterlər də bir çox proqramlarda və daha çox yerdə istifadə olunur.Javascript web proqramlaşdırma da daha çox istifadə olunur.HTML -də animasya, dinamiklik qurur.Java compiled dildir ancaq Javascript Interpreted.Əsasən Java backend -də istfadə olunur ancaq Javascript frontend -də.Java static Javascript isə dinamkik xüsusiyyətə malikdir.Java müxtəlif proqramlar üçün Javascript isə Web proqramlar üçün nəzərdə tutulmuşdur.
