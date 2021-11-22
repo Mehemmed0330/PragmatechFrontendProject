@@ -96,7 +96,16 @@
 
 Typescript 2012-ci ildə Microsoft tərəfindən qurulmuş və dəstəklən proqramlaşdırma dilidir.Paradigma göstəriciləri: Functional,Object Orianted,Imperative - olmasıdır.
 Typescriptdə olan kod sintaksisi Javascriptlə eynidir və daha da artığığır.Proqramlaşdırma zamanı Typescriptdə yazılan kodlar .![Javascriptə çevrilir](https://www.tnado.com/includes/medias/2018/11/tnado-seo-cms-blog-typescript-javascript.png).
-Javascript -ə aid olan özəlliklər Typescript -də var.Ancaq Typescript -ə aid olan özəlliklər Javascript -də yoxdu.Typescript Javascript -in genişləndirilmiş versionudu.Və hər Javascrit kodu bir Typescript kodudur.Ancaq o kodlar yığılıb işlədilməyi müddətdə Javascript kodu yox Typescript kodudur.
+Javascript -ə aid olan özəlliklər Typescript -də var.Ancaq Typescript -ə aid olan özəlliklər Javascript -də yoxdu.Typescript Javascript -in genişləndirilmiş versionudu.Və hər Javascrit kodu bir Typescript kodudur.Ancaq o kodlar yığılıb işlədilməyi müddətdə Javascript kodu yox Typescript kodudur.Typescript -i asanlıqla yazmaq üçün Javascript -i bilmək vacibdir.
 TypeScript Javascript -in bütün kitabxanalarında , framework -lərində işləyir.
-Javascript interpreted bir dildir yəni kodda yanlış hissə olduqda kodun yoxlanılmasını dayandırır və ümumi kodda düzgün hissə də olsa belə o hissəni göstərmir.Ancaq Typescript kodu işə salmadan səhvi yoxlayır və o səhv üçün bir həll yolu verir.![Şəkilə baxsaq](file:///C:/Users/mehemmed/OneDrive/%C4%B0%C5%9F%20masas%C4%B1/ScreenShot/Screenshot_111.png).
-Typescript yuxarıda da yazdığımız kimi obyekt yönlü dildir və bu bizə proqramlaşdırmada mirasalma, modulyar və.s kimi özəlliklərlə işləməyə imkan verir.
+Javascript interpreted bir dildir yəni kodda yanlış hissə olduqda kodun yoxlanılmasını dayandırır və ümumi kodda düzgün hissə də olsa belə o hissəni göstərmir.Ancaq Typescript kodu işə salmadan səhvi yoxlayır və o səhv üçün bir həll yolu verir.![Şəkilə baxsaq](https://i.stack.imgur.com/j0LJT.png).
+Typescript yuxarıda da yazdığımız kimi obyekt yönlü dildir və bu bizə proqramlaşdırmada mirasalma, modulyar və.s kimi özəlliklərlə işləməyə imkan verir.Əksər obyekt yönümlü dillər kimi, TypeScript-də də istifadəçilərə öz növlərini təyin etməyə imkan verən interfeyslər var. İnterfeyslər obyektin malik olduğu xassələri, o xassələrlə əlaqəli tipləri təyin edir. TypeScript interfeysləri əlavə xüsusiyyətlərə malik ola bilər.
+Typescript types.
+Bu proqramlaşdırma dilində Javascript -ə uyğun olaraq type yaxınlığı var ancaq fərqliliklər də var:Numbers,String,Boolean,Array,Object,Enum,Any-dir.
+Javascript-dən fərqli olaraq Enum və Any dəyişən var.
+Enum -C#-ın dəyişəninə bənzəyən bu növ rəqəmsal dəyərlər ardıcıllığına insan tərəfindən oxuna bilən adlar təyin etməyə imkan verir.
+Any -dəyərlə başa çatacağını əvvəlcədən bilmirik - o, öz dəyərlərini, məsələn, istifadəçi girişindən və ya üçüncü tərəf kitabxanasından götürə bilər.
+TypeScript class
+Obyekt yönümlü proqramlaşdırmada class funksionallığı miras alır və öz növbəsində obyektlərin tikinti blokları rolunu oynayır. 2015 -ci ilə qədər Javascript class məntiqindən istifadə etmirdi.Ancaq EcmaScript2015 -də olunan yenilikdən sonra artıq class məntiqi Javascriptdə istifadə olunmağa başladı.Artıq class məntiqi həm Javascript -in həm də Typescript -in bir hissəsi olmuşdu və demək olar ki Javascriptlə Typescript eyni sintaksisi istifadə edirdi.TypeScript kompilyatorunun üstünlüklərindən biri də odur ki, o, JavaScript class -lar ilə kodu 2015-ci ildən əvvəlki standartlara uyğun gələn köhnə JavaScript koduna çevirə bilir.
+TypeScript date
+Date obyekti əsasən tarixləri illəri ayları günləri və millisaniyələrə qədər anı təmsil edən bütün dəyərləri bildirir.Və Javascript-dədə olduğu kimi konstruktora heç bir arqument ötürməsək avtomatik kompüterin məlumatlarından istifadə edib tarixi ekrana çap edəcək.
