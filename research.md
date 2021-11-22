@@ -109,3 +109,18 @@ TypeScript class
 Obyekt yönümlü proqramlaşdırmada class funksionallığı miras alır və öz növbəsində obyektlərin tikinti blokları rolunu oynayır. 2015 -ci ilə qədər Javascript class məntiqindən istifadə etmirdi.Ancaq EcmaScript2015 -də olunan yenilikdən sonra artıq class məntiqi Javascriptdə istifadə olunmağa başladı.Artıq class məntiqi həm Javascript -in həm də Typescript -in bir hissəsi olmuşdu və demək olar ki Javascriptlə Typescript eyni sintaksisi istifadə edirdi.TypeScript kompilyatorunun üstünlüklərindən biri də odur ki, o, JavaScript class -lar ilə kodu 2015-ci ildən əvvəlki standartlara uyğun gələn köhnə JavaScript koduna çevirə bilir.
 TypeScript date
 Date obyekti əsasən tarixləri illəri ayları günləri və millisaniyələrə qədər anı təmsil edən bütün dəyərləri bildirir.Və Javascript-dədə olduğu kimi konstruktora heç bir arqument ötürməsək avtomatik kompüterin məlumatlarından istifadə edib tarixi ekrana çap edəcək.
+
+## 2.Array içərisindən maksimum və minimum dəyərləri necə tapa bilərik?
+
+Min və Max dəyərlər nədir?
+Hər bir proqramçının olmazsa olmaz alışqanlıqların biri alqoritmik probleri həll etmək,bununla kifayətlənməyib hansı ki tapılan həll üsulunu daha da sadələşdirmək o həlli daha qısa üsullara qədər ixtisar etməkdir.Və bizim alqoritmik məsələlərdə əksərən istifadə etdiyimiz məntiqlərdən biri array içində elementlərdən minimumu və maksimumu necə tapılırdır.
+Bu mövzuda biz Math.max() və Math.min() -dən danışacağıq.Onların funksiyası array -dəki elementləri detekt edib hansı elementin kiçik ya da böyük olduğunu çap etməkdir.Ancaq array-in içərisində string ya da rəqəmdən fərqli bir dəyişən olarsa nəticədə bizə NaN olaraq çıxaçaq.Yəni bu bir rəqəm deyildir.
+Təsviri(Yazılma qaydası və niyə)
+Yuxarıda kiçik introdaction verdikdən sonra bir az daha dərinə gedək və nə üçün bu formada yazıldığına baxaq.Göründüyü kimi max() Riyaziyyatın statik metodu olduğundan,biz onu Math.max() kimi istifadə etməliyik.
+Funksiya içərisində istifadə olunduqda
+Əgər verilən bu dəyərlər function-un içərisində parametr olaraq icra olunursa artıq icra fərqli cür olur.Məsələn:
+Bu formada baş verir.Biz artıq function-da parametr kimi verilən arr parametrinin qarşısına Math.(max) içərisində işlətdikdə qarşısına 3 nöqtə qoyuruq.
+Method istifadə etmədən ən böyük və ən kiçik elementin tapılması.
+Sadə olaraq loop və şərt operatorlarından istifadə edərək ilk öncə döngü içərisinə salırıq daha sonra şərtdə array -in içərisindəki elementlərin şərti olaraq verdiyimiz max -dan böyük olduğunu göstərib bunun əsasında da çıxacaq nəticənin həmin array -in içərisindən bir dəyər olduğunu göstəririk.
+Ancaq isbatlanmışdır ki əgər array daxilində milyon element olarsa və hansı üsulla yazılarsa hesablama daha sürətli baş verər deyə yoxlama aparılmışdır.Nəticələr isə çox maraqlıdır.Deməli Es6 ilə proqramlaşdırdıqda 2.214 saniyə müddətində tamamlanır(İlk şəkildəki kimi) və təbii ki başqa yollarla da sınanıb və demək olar ki nəticə olub.Ancaq bir yer istisna.
+Burdan belə nəticəyə gəlirik ki massivdəki elementi nə qədər artırsaq hesablama bir o qədər yavaşlayır və bu da nəticə.
