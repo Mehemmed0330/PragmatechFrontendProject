@@ -18,5 +18,5 @@ function sockMerchant(ar) {
 }
 sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20])
 
-// const result = ar.filter(num => num == ar[i]);
-// console.log(result)
+const result = ar.filter(num => num == ar[i]);
+console.log(result)
