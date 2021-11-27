@@ -39,16 +39,7 @@ function showUserData() {
     tbody.innerHTML += tr
 }
 
-// function deleteUser(item, id, e) {
-//     e.preventDefault();
-//     for (let i in users) {
-//         if (users[i].u_id == id) {
-//             users.splice(i, 1)
-//         }
-//     }
-//     tbody.removeChild(item.parentElement.parentElement)
-// }
-// editStatus = true
+
 
 function deleteUser(item, _id, e) {
     e.preventDefault()
