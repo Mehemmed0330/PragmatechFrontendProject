@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(33, 36, 40);
+}
+
+#Header {
+    padding: 0px 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo-image-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.logo__image {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #5d5f63;
+}
+
+.logo__image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.logo__name {
+    font-size: 22px;
+    color: #878e99;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.link {
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: #878e99;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    color: white;
+    transition: all 0.5s ease;
+}
