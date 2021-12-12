@@ -1,5 +1,4 @@
 function plusMinus(arr) {
-    // Write your code here
     const lengthArr = arr.length;
     const plusArr = arr.filter(num => num > 0);
     const lenghtPlus = plusArr.length;
