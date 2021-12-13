@@ -1,8 +1,8 @@
 function sockMerchant(ar) {
-    
+
     for (let i = 0; i < ar.length; i++) {
         const element = array[i];
-        
+
     }
 }
 sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20]);
