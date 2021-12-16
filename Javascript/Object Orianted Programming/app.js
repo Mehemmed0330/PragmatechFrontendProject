@@ -41,7 +41,16 @@
 // person.name = "Farid"
 // console.log(person.name)
 
-let person = {}
-person.age = 18;
+// let person = {}
+// person.age = 18;
 
-console.log(person.age)
+// console.log(person.age)
+
+let user = {
+    name: "Muhammad",
+    age: 19
+}
+user.sayHello = function() {
+    console.log("Hi Muhammad")
+}
+user.sayHello();
