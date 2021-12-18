@@ -1,0 +1,48 @@
+#PageHeader {
+    font-family: $font-family;
+    .container {
+        padding: 30px 100px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                cursor: pointer;
+                &__name {
+                    color: $light-black;
+                    font-size: $size-big;
+                    font-weight: $weight-big;
+                    .tomato {
+                        color: $tomato;
+                    }
+                }
+                &__text {
+                    color: $light-gray;
+                    font-size: $size-mini;
+                    font-weight: $weight-big;
+                    p {
+                        line-height: $height-mini;
+                    }
+                }
+            }
+            .view {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $light-gray;
+                cursor: pointer;
+                &__num {
+                    font-size: $size-midle;
+                    font-weight: $weight-mini;
+                }
+                &__icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+                .view__icons--basket {
+                    font-size: $size-big;
+                }
+            }
+        }
+    }
+}
