@@ -204,4 +204,51 @@ table {
 #PageHeader .container .header .view .view__icons--basket {
   font-size: 25px;
 }
+
+#PageMain {
+  font-family: Poppins;
+  margin-top: 50px;
+}
+
+#PageMain .container {
+  padding: 30px 100px;
+}
+
+#PageMain .container .main .main__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#PageMain .container .main .main__filter .headfilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+#PageMain .container .main .main__filter .headfilter .element .link--different {
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#PageMain .container .main .main__filter .headfilter .element .link {
+  text-decoration: none;
+  color: #57616b;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#PageMain .container .main .main__filter .headfilter .element .link:hover {
+  color: #212529;
+}
+
+body {
+  background-color: #f8f8f8;
+}
 /*# sourceMappingURL=style.css.map */

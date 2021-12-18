@@ -1,0 +1,34 @@
+#PageMain {
+    font-family: $font-family;
+    margin-top: 50px;
+    .container {
+        padding: 30px 100px;
+        .main {
+            .main__filter {
+                display: flex;
+                justify-content: center;
+                .headfilter {
+                    display: flex;
+                    gap: 40px;
+                    .element {
+                        .link--different {
+                            text-decoration: none;
+                            color: $light-black;
+                            font-size: $size-midle;
+                            font-weight: $weight-big;
+                        }
+                        .link {
+                            text-decoration: none;
+                            color: $light-gray;
+                            font-size: $size-midle;
+                            font-weight: $weight-big;
+                            &:hover {
+                                color: $light-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

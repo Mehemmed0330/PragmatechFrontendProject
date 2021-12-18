@@ -1,4 +1,7 @@
 @import "./Base/base";
 @import "./Font/fonts";
 @import "./Variable/variables";
-@import "./Layout/header"
+@import "./Layout/layouts";
+body {
+    background-color: $light-white;
+}
