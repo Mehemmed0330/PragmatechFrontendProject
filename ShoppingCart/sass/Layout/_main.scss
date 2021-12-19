@@ -1,6 +1,6 @@
 #PageMain {
     font-family: $font-family;
-    margin-top: 50px;
+    margin-top: 30px;
     .container {
         padding: 30px 100px;
         .main {
@@ -26,6 +26,28 @@
                                 color: $light-black;
                             }
                         }
+                    }
+                }
+            }
+            .carts {
+                margin-top: 50px;
+                display: flex;
+                gap: 30px;
+                .cart {
+                    width: 255px;
+                    border: 1px solid $light-gray;
+                    border-radius: 5px;
+                    .cart__img {
+                        object-fit: cover;
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                    &__about {
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 20px 10px;
+                        border-top: 1px solid $light-gray;
                     }
                 }
             }

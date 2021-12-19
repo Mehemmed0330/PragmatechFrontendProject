@@ -207,7 +207,7 @@ table {
 
 #PageMain {
   font-family: Poppins;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #PageMain .container {
@@ -246,6 +246,39 @@ table {
 
 #PageMain .container .main .main__filter .headfilter .element .link:hover {
   color: #212529;
+}
+
+#PageMain .container .main .carts {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+#PageMain .container .main .carts .cart {
+  width: 255px;
+  border: 1px solid #57616b;
+  border-radius: 5px;
+}
+
+#PageMain .container .main .carts .cart .cart__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#PageMain .container .main .carts .cart .cart__img img {
+  width: 100%;
+}
+
+#PageMain .container .main .carts .cart__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 10px;
+  border-top: 1px solid #57616b;
 }
 
 body {
