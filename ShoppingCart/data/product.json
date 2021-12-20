@@ -5,7 +5,11 @@
     },
     {
         "name": "Home",
-        "detail": "This is book",
+        "detail": "This is home",
+        "price": 15
+    }, {
+        "name": "Flavour",
+        "detail": "This is home",
         "price": 15
     }
 ]
