@@ -33,6 +33,7 @@
                 margin-top: 50px;
                 display: flex;
                 gap: 30px;
+                flex-wrap: wrap;
                 .cart {
                     width: 255px;
                     border: 1px solid $light-gray;

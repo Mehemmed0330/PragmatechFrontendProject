@@ -254,6 +254,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #PageMain .container .main .carts .cart {
