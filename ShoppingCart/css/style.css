@@ -262,6 +262,7 @@ table {
   width: 255px;
   border: 1px solid #57616b;
   border-radius: 5px;
+  background-color: white;
 }
 
 #PageMain .container .main .carts .cart .cart__img {
