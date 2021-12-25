@@ -1,5 +1,12 @@
-let time = document.querySelector('.cart__about--time');
 let num = document.querySelector('.view__num');
-time.addEventListener('click', function() {
-    console.log("hi")
-})
+let check = document.querySelector('#check')
+
+// time.addEventListener('click', function() {
+//     console.log("hi")
+// })
+let i = 0
+
+function time() {
+    i++;
+    num.innerHTML = i;
+}

@@ -34,6 +34,7 @@
                 display: flex;
                 gap: 30px;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 .cart {
                     width: 255px;
                     border: 1px solid $light-gray;
@@ -53,6 +54,9 @@
                     }
                     .cart__about--time {
                         cursor: pointer;
+                        #check {
+                            display: none;
+                        }
                     }
                 }
             }

@@ -276,6 +276,9 @@ table {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #PageMain .container .main .carts .cart {
@@ -306,6 +309,10 @@ table {
 
 #PageMain .container .main .carts .cart .cart__about--time {
   cursor: pointer;
+}
+
+#PageMain .container .main .carts .cart .cart__about--time #check {
+  display: none;
 }
 
 body {
