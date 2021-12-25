@@ -1,0 +1,31 @@
+[{
+        "id": 12,
+        "name": "Politics",
+        "news": [
+            "News 1",
+            "News 2",
+            "News 3"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Social Media",
+        "news": [
+            "News 23",
+            "News 21",
+            "News 33"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Business",
+        "news": [
+            "News 23",
+            "News 21",
+            "News 33",
+            "News 34",
+            "News 37",
+            "News 38"
+        ]
+    }
+]

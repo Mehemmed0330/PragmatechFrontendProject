@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.news {
+    width: 500px;
+}
+
+.news-item {
+    border: 1px solid yellow;
+}
+
+.authors {
+    width: 400px;
+}
+
+.author {
+    border: 1px solid green;
+}
