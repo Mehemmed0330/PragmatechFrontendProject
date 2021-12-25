@@ -29,6 +29,7 @@
                 align-items: center;
                 gap: 10px;
                 color: $light-gray;
+                position: relative;
                 cursor: pointer;
                 &__num {
                     font-size: $size-midle;
@@ -41,6 +42,22 @@
                 }
                 .view__icons--basket {
                     font-size: $size-big;
+                }
+            }
+            .box {
+                position: absolute;
+                top: 12%;
+                right: 10%;
+                width: 350px;
+                height: 140px;
+                display: none;
+                border: 1px solid black;
+                background-color: #fff;
+                .alert {
+                    padding: 50px;
+                    .start {
+                        padding: 17px 0px;
+                    }
                 }
             }
         }
