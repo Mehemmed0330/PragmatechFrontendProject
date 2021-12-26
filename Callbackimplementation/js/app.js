@@ -13,7 +13,6 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "./data.json", true);
 xhttp.send();
 
-let news = 0;
 
 
 function viewAuthor(author) {
@@ -22,15 +21,14 @@ function viewAuthor(author) {
     `
 }
 
-function viewNews(section) {
-    let interval = setInterval(function() {
-        news += 1;
-        if (news === 3) {
-            clearInterval(interval)
-        }
+let interval = setInterval(function viewNews(section) {
+    if (0 < section.news) {
+        clearInterval(interval);
+    } else {
         return `
         <div class="news-item">${section.news}</div>
-        `
+    `
+    }
 
-    }, 1000)
-}
+
+}, 1000)
