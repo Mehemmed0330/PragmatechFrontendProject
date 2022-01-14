@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-items: center;
+    align-content: center;
+    margin: 200px auto;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+}
+
+.class {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
