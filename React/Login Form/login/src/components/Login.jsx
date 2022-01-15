@@ -5,7 +5,6 @@ import { useState,useRef } from 'react'
 export default function Login() {
     const [ , setRender] = useState({});
     const [answer, setanswer] = useState();
-    const [color, setcolor] = useState();
     const nameRef = useRef(false);
     const passwordRef = useRef(false);
     
