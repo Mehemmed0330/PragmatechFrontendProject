@@ -1,11 +1,13 @@
 .container {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     /* justify-content: center; */
     justify-items: center;
     align-content: center;
-    margin: 200px auto;
+    /* margin: 200px auto; */
     width: 300px;
+    transform: translateY(100px);
 }
 
 input {
