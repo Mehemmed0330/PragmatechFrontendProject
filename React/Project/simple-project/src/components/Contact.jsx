@@ -1,8 +1,12 @@
 import React from 'react';
+import Button from "./Button"
 
 const Contact = () => {
     return (
-        <div>
+        <div style={{
+            textAlign:"center"
+        }}>
+            <Button/>
             Contact
         </div>
     );
