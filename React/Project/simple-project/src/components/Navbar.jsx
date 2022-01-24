@@ -18,9 +18,11 @@ const Navbar = () => {
                     <Link onClick={click} style={{textDecoration: 'none', color:"red " , padding:"12px 8px", backgroundColor:"black"}} to ={"/contact"}>Contact</Link>
                     <NavLink
                         style={({ isActive }) =>
-                        isActive ? {
-                            color:"red"
-                            }  : undefined
+                        ({
+                            color:isActive ? "red":undefined,
+                            backgroundColor:"green"
+                        })
+                           
                         }
                         to="/team">Team
                     </NavLink>  
