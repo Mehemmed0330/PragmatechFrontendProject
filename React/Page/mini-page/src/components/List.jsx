@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const List = () => {
+    const navigate = useNavigate();
     const data = [
         {
           "id": 1,
@@ -238,9 +239,8 @@ const List = () => {
     return (
         <div style={{width:"200px", backgroundColor:"#2D0AF7",display:"flex",flexWrap:"wrap"}}>
             {data.map((user) => (
-                <Link style={{margin: "15px 5px",textDecoration:"none",color:"white"}} to={"/:id"}>{user.id}.{user.name}</Link>
+                <Link key={user.id} style={{margin: "15px 5px",textDecoration:"none",color:"white",cursor:"pointer"}} to={`/detail/${user.id}`} >{user.id}.{user.name}</Link>
              ))}
-      
         </div>
     );
 }
