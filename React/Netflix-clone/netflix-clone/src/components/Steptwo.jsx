@@ -4,10 +4,14 @@ import { useState } from 'react';
 
 const Steptwo = () => {
     const [btnback, setbtnback] = useState("#e50914");
-
     const actionBack = (backtwo) =>{
         setbtnback(backtwo)
     }
+    const [isChossen, setisChossen] = useState(false);
+    const [isChossensec, setisChossensec] = useState(false);
+    const [isChossenthre, setisChossenthre] = useState(false);
+
+    
     return (
         <div style={{padding:"10px 100px"}}>
             <div className="toptext">
@@ -16,56 +20,56 @@ const Steptwo = () => {
                 <p>Downgrade or upgrade at any time</p>
             </div>
             <div className="boxes">
-                <div className="box"><span>Basic</span></div>
-                <div className="box"><span>Standart</span></div>
-                <div className="box"><span>Premium</span></div>
+                <div className="box" onClick={()=>{setisChossen(true)}} style = {{backgroundColor:isChossen===true ? "rgb(229, 9, 20)" :""}}><span>Basic</span></div>
+                <div className="box" onClick={()=>{setisChossensec(true)}} style={{backgroundColor:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}><span>Standart</span></div>
+                <div className="box"  onClick={()=>{setisChossenthre(true)}} style={{backgroundColor:isChossenthre ===true ?"rgb(229, 9, 20)" :"" }}><span>Premium</span></div>
             </div>
             <div className="table">
                 <table>
                     <tr>
                         <th>Monthly price after free month ends</th>
-                        <td>$7.99</td>
-                        <td>$10.99</td>
-                        <td>$13.99</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>$7.99</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>$10.99</td>
+                        <td onClick={()=>{setisChossenthre(true)}} style={{color:isChossenthre ===true ?"rgb(229, 9, 20)" :"" }}>$13.99</td>
                     </tr>
                     <tr>
                         <th>HD available</th>
-                        <td>No</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>No</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
+                        <td onClick={()=>{setisChossenthre(true)}} style={{color:isChossenthre ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr>
                     <tr>
                         <th>Ultra HD available</th>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>No</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>No</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr>
                     <tr>
                         <th>Screens you can watch on at the same time</th>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>4</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>1</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>2</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>4</td>
                     </tr>
                     <tr>
                         <th>Watch on your laptop, TV, phone and tablet</th>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr><tr>
                         <th>Unlimited movies and TV shoes</th>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr><tr>
                         <th>Cancel anytime</th>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr><tr>
                         <th>First month free</th>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td onClick={()=>{setisChossen(true)}} style = {{color:isChossen===true ? "rgb(229, 9, 20)" :""}}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
+                        <td onClick={()=>{setisChossensec(true)}} style={{color:isChossensec ===true ?"rgb(229, 9, 20)" :"" }}>Yes</td>
                     </tr>
                 </table>
             </div>
