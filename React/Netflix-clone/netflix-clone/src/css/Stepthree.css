@@ -1,0 +1,22 @@
+.threedtop h2 {
+    font-size: 13px;
+}
+
+.threedtop h1 {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.threedtop p {
+    font-weight: 700;
+}
+
+input {
+    width: 369.73px;
+    display: block;
+    margin: 5px auto;
+    padding: 14px;
+    outline: none;
+    font-size: 18px;
+}

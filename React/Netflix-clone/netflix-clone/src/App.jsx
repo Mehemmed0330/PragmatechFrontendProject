@@ -4,6 +4,7 @@ import Main from "./components/Main"
 import Steptwo from "./components/Steptwo"
 import Stepone from "./components/Stepone"
 import Stepthree from "./components/Stepthree"
+import Finish from "./components/Finish"
 import {Routes,Route} from "react-router-dom"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/stepone' element = {<Stepone/>}/>
         <Route path='/steptwo' element ={<Steptwo/>} />
         <Route path ='/stepthree/' element = {<Stepthree/>}/>
+        <Route path ='/finish/:name' element={<Finish/>} />
       </Routes>
 
     </div>
