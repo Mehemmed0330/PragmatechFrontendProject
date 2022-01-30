@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Main from "./components/Main"
 import Steptwo from "./components/Steptwo"
 import Stepone from "./components/Stepone"
+import Stepthree from "./components/Stepthree"
 import {Routes,Route} from "react-router-dom"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element = {<Main/>}/>
         <Route path='/stepone' element = {<Stepone/>}/>
         <Route path='/steptwo' element ={<Steptwo/>} />
+        <Route path ='/stepthree/' element = {<Stepthree/>}/>
       </Routes>
 
     </div>

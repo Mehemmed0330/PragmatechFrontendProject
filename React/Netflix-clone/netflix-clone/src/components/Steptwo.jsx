@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Steptwo.css"
 import { useState , useEffect } from 'react';
+import {useNavigate} from "react-router-dom"
 
 const Steptwo = () => {
     const [btnback, setbtnback] = useState("#e50914");
@@ -10,18 +11,20 @@ const Steptwo = () => {
     const [isChossen, setisChossen] = useState(false);
     const [isChossensec, setisChossensec] = useState(false);
     const [isChossenthre, setisChossenthre] = useState(false);
-    const [msj, setmsj] = useState(false);
+    // const [msj, setmsj] = useState(false);
 
-    const isalert = () => {
-        if(isChossen === false && isChossensec === false && isChossenthre === false){
-            setmsj(alert("You must select a plan to continue.") === msj)
-        }
-        else{
-
-        }
+    // const isalert = () => {
+    //     if(isChossen === false && isChossensec === false && isChossenthre === false){
+    //         setmsj(alert("You must select a plan to continue.") === msj)
+    //     }
+    //     else{
+            
+    //     }
             
        
-    }
+    // }
+    const navigate = useNavigate();
+
     
     useEffect(() => {
         if (isChossen) {
@@ -108,7 +111,9 @@ const Steptwo = () => {
                 </table>
             </div>
             <div className="acceesstwo">
-                <button onClick={isalert} style={{backgroundColor:`${btnback}`,transition:"all 0.5s ease",borderRadius:"3px",fontSize:"17px",padding:"15px 100px",outline:"none",border:"none",color:"white" ,cursor:"pointer"}} onMouseEnter = {()=>actionBack("#f6121d")} onMouseOut = {()=>actionBack("#e50914")}>Contunie</button>
+                <button onClick={()=>{
+                    navigate(isChossen === false && isChossensec === false && isChossenthre === false? alert("hi") :"/stepthree")
+                }} style={{backgroundColor:`${btnback}`,transition:"all 0.5s ease",borderRadius:"3px",fontSize:"17px",padding:"15px 100px",outline:"none",border:"none",color:"white" ,cursor:"pointer"}} onMouseEnter = {()=>actionBack("#f6121d")} onMouseOut = {()=>actionBack("#e50914")}>Contunie</button>
             </div>
         </div>
     );
