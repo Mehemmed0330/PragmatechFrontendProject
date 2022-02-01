@@ -1,14 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useContext } from 'react';
+// import { useParams } from 'react-router-dom';
+// import { Name } from '../components/Stepthree';
 
 
-const Finish = () => {
-const params = useParams();
 
+const Finish = (props) => {
+//  const {name} = useContext(Name);
     return (
-        <div>
-            {params.name}
-        </div>
+             <div>
+                {props.name}
+            </div>
+       
     );
 }
 
