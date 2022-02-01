@@ -112,7 +112,11 @@ const Steptwo = () => {
             </div>
             <div className="acceesstwo">
                 <button onClick={()=>{
-                    navigate(isChossen === false && isChossensec === false && isChossenthre === false? alert("hi") :"/stepthree")
+                    navigate(isChossen === false && isChossensec === false && isChossenthre === false? alert("hi") :"/stepthree",{
+                        state: isChossen === false && isChossensec === false && isChossenthre === false ? undefined : {
+                        plan: isChossen ? "Basic" : isChossensec ? "Standart" : "Premium"
+                        }
+                    })
                 }} style={{backgroundColor:`${btnback}`,transition:"all 0.5s ease",borderRadius:"3px",fontSize:"17px",padding:"15px 100px",outline:"none",border:"none",color:"white" ,cursor:"pointer"}} onMouseEnter = {()=>actionBack("#f6121d")} onMouseOut = {()=>actionBack("#e50914")}>Contunie</button>
             </div>
         </div>

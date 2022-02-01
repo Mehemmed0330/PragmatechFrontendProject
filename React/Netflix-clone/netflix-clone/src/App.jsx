@@ -21,9 +21,8 @@ function App() {
         <Route path='/stepone' element = {<Stepone/>}/>
         <Route path='/steptwo' element ={<Steptwo/>} />
         <Route path ='/stepthree/' element = {<Stepthree/>}/>
-        <Route path ='/finish/:name' element={<Finish/>} />
+        <Route path ='/finish' element={<Finish/>} />
       </Routes>
-
     </div>
   );
 }
