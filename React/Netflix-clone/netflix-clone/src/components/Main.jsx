@@ -1,36 +1,63 @@
-import React, { useState }from 'react';
-import Carousel from 'react-elastic-carousel';
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
-];
-
-
-const Main = () => {
-  const [items, setItems] = useState([
-    {id:1,image:'../image/slider1.jpg'}
-  ]);
-
- 
-
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import slider1 from "../../src/image/slider1.jpg"
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
   return (
-    <div>
-       {/* <div className="controls-wrapper">
-        <button onClick={removeItem}>Remove Item</button>
-        <button onClick={addItem}>Add Item</button>
-      </div> */}
-      <hr className="seperator" />
-      <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
-            <div key={item.id}>{item.image}</div>
-          ))}
-        </Carousel>
-      </div>
-    </div>
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
   );
 }
 
-export default Main;
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+
+export default class AutoPlay extends Component {
+  render() {
+    const settings = {
+      dots: false,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 70000,
+      cssEase: "linear",
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+    };
+    return (
+      <div>
+        <Slider {...settings}>
+          <div>
+            <div style={{display:"flex",position:"relative",width:"100%", height:"435px",justifyContent:"space-between"}}>
+            <div style={{}}>
+              <div style={{position:"absolute",height:"100%" ,width:"40%",color:"white",backgroundImage:"linear-gradient(to right, #000000,#000000, #002120)"}}>
+                <div className="name"><h1>Stargate Universe</h1></div>
+                <div className="date"><h4>99% Match 2009-2011 2 Seasons</h4></div>
+                <div className="textabout"><p>Trapped on an Ancient spaceship billions of light-years from home, a group of soldiers and civilians struggle to survive and find their way back to Earth</p></div>
+                <div className="textpersons"><p>Starring: Robert Carlyle, Louis Ferreira, Brian J. SmithGenre:Sci-fi,Fantasy,Drama</p> </div>
+              </div>
+            </div>
+            <div style={{backgroundImage:`url(${slider1})`, width:"70%", height:"100%",objectFit:"cover",backgroundPosition:"center",backgroundSize:"cover"} }></div>
+            </div>
+          </div>
+          
+        </Slider>
+      </div>
+    );
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/Header.css"
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import logo  from "../../src/image/logo.png"
 
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
           {/* <div className="logo">
             <img src={"./image/logo.png"} alt="" />
           </div> */}
-          <Link to={"/"}> <img style={{ width: "5.781rem"}} src={"./image/logo.png"} alt="" /> </Link>
+          <Link to={"/"}> <img style={{ width: "5.781rem"}} src={logo} alt="" /> </Link>
 
           {/* <div className="access">
             <span>Register</span>

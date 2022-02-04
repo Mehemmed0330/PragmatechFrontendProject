@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/Stepone.css"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import access from "../../src/image/access.png"
 const Stepone = () => {
     const [btncolor, setbtncolor] = useState("#f6121d");
 
@@ -14,7 +15,7 @@ const Stepone = () => {
         <div style={{color:"white"}}>
             <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"25%",margin:"150px auto"}}>
                 <div className="image">
-                    <img src="./image/access.png" alt="" />
+                    <img src={access} alt="" />
                 </div>
                 <div className="text">
                     <h2>STEP 1 OF 3</h2>
