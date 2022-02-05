@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import UnderSlider from "./UnderSlider"
-
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 import slider1 from "../../src/image/slider1.jpg"
 import slider2 from "../../src/image/slider2.jpg"
 import slider3 from "../../src/image/slider3.jpg"
@@ -32,8 +30,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class AutoPlay extends Component {
-  render() {
+export default function AutoPlay() {
     const settings = {
       dots: false,
       infinite: true,
@@ -69,6 +66,7 @@ export default class AutoPlay extends Component {
         underabout:"Starring: Will Ferrell, John C. Reilly, Mary Steenburgen Genre: Comedy, Late Night Comedies, Slapstick Comedy"
        }
     ]
+    
     return (
       <div>
         <Slider {...settings}>
@@ -92,5 +90,4 @@ export default class AutoPlay extends Component {
       </div>
      
     );
-  }
 }

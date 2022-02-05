@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React ,{Fragment, useContext} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import minislider1 from "../../src/image/minislider1.jpg"
-import minislider2 from "../../src/image/minislider2.jpg"
-import minislider3 from "../../src/image/minislider3.jpg"
-import minislider4 from "../../src/image/minislider4.jpg"
-import minislider5 from "../../src/image/minislider5.jpg"
-import minislider6 from "../../src/image/minislider6.jpg"
-import minislider7 from "../../src/image/minislider7.jpg"
+
+import {useNavigate} from "react-router-dom"
+import { context } from "../App";
+
 
 
 function SampleNextArrow(props) {
@@ -33,8 +30,10 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class CustomArrows extends Component {
-  render() {
+export default function CustomArrows()  {
+    const allData = useContext(context);
+    const navigate = useNavigate();
+  
     const settings = {
       dots: false,
       infinite: false,
@@ -43,48 +42,22 @@ export default class CustomArrows extends Component {
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
-    const underSliderData = [
-        {   id:1,
-            miniimage:minislider1,
-            categorie:"Trending Now"
-        },
-        {   id:2,
-            miniimage:minislider2,
-        },
-        {
-            id:3,
-            miniimage:minislider3
-        },  
-        {
-            id:4,
-            miniimage:minislider4
-        },
-        {
-            id:5,
-            miniimage:minislider5
-        },
-        {
-            id:6,
-            miniimage:minislider6
-        },
-        {
-            id:7,
-            miniimage:minislider7
-        }
-    ]
+    
     return (
       <div>
-        
-        <Slider {...settings}>
-            {underSliderData.map((underdata)=>
+          {allData.map(dataa=>
+          <Fragment key={dataa.id}>
+          <div>{dataa.catagoryName}</div>
+            <Slider {...settings}>
+            {dataa.movies.map((underdata)=>
             
-                <div>
+                <div key={underdata.id}>
                     {/* <div><p>{underdata.categorie}</p></div> */}
-                    <div key={underdata.id}>
+                    <div>
                     
                 <div style={{display:"flex"}}>
                     <div style={{backgroundImage:`url(${underdata.miniimage})`,height:"150px" , width:"400px",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundSize:"cover",cursor:"pointer",margin:"0px 5px"}} 
-                    
+                        onClick={()=>{navigate("/detail/"+dataa.id+"/"+underdata.id)}}
                     ></div>
                  </div>
                </div>
@@ -93,7 +66,13 @@ export default class CustomArrows extends Component {
 
             )}
         </Slider>
+        </Fragment>
+          
+
+          )}
+        
+      
       </div>
     );
-  }
+  
 }
