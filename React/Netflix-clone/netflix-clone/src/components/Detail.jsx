@@ -6,7 +6,7 @@ import { context } from '../App';
 const Detail = () => {
     const alldata = useContext(context);
     const {catagoryid,id} = useParams();
-    const data = alldata?.find(w=>w.id==catagoryid)?.movies?.find(w=>w.id==id)
+    const data = alldata?.find(w=>w.id=catagoryid)?.movies?.find(w=>w.id=id)
     console.log(data)
     return (
         <div>
