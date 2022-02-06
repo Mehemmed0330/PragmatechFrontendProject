@@ -38,7 +38,7 @@ export default function AutoPlay() {
       slidesToScroll: 1,
       autoplay: true,
       speed: 2000,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       cssEase: "linear",
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
