@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/breakpoint.scss"
+    ],
+    "names": [],
+    "file": "breakpoint.css"
+}

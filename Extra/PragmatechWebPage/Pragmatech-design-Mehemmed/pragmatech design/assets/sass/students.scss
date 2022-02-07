@@ -1,0 +1,165 @@
+@import "./colors.scss";
+@import "./font.scss";
+@import "./reset.scss";
+@import "./breakpoint.scss";
+// @import "./extend.scss";
+#summaryİnformation {
+    position: relative;
+    font-family: $font;
+    .container {
+        display: flex;
+        .summary {
+            // position: relative;
+            // background-color: gray;
+            display: flex;
+            width: 100%;
+            .back__area {
+                margin: 28px 0px;
+                .text {
+                    background-color: $grey;
+                    .back__text {
+                        width: 41rem;
+                        margin-left: 13.2rem;
+                        padding: 75px 5px;
+                        .back__area--title {
+                            font-size: $font-size64;
+                            line-height: $line-height80;
+                            font-weight: $weight700;
+                            position: relative;
+                            .line {
+                                width: 3.375rem;
+                                height: 0.188rem;
+                                background-color: $green;
+                                position: absolute;
+                                right: 20px;
+                                top: 35px;
+                            }
+                        }
+                        .back__area--about {
+                            font-size: $font-size16;
+                            line-height: $line-height25-6;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .front__image {
+                // width: 845px;
+                // height: 500px;
+                & img {
+                    // width: 52.813rem;
+                    width: 52.813rem;
+                    min-width: 100%;
+                    object-fit: cover;
+                    height: 31.25rem;
+                }
+            }
+        }
+    }
+}
+
+#Component {
+    margin-top: 141px;
+    margin-bottom: 222px;
+    .container {
+        .component {
+            .components__head {
+                border-bottom: 1px solid #C3C3C3;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .components__head--firstfilter {
+                    font-size: $font-size24;
+                    line-height: $line-height30;
+                    color: black;
+                    font-family: $font;
+                    font-weight: $weight700;
+                    padding: 1.25rem 3.438rem;
+                    border-bottom: 3px solid $green;
+                    margin: 0px 90px;
+                    cursor: pointer;
+                }
+                .components__head--secondfilter {
+                    font-size: $font-size24;
+                    line-height: $line-height30;
+                    color: black;
+                    font-family: $font;
+                    font-weight: $weight700;
+                    padding: 1.25rem 3.438rem;
+                    margin: 0px 90px;
+                    // border-bottom: 3px solid $green;
+                    cursor: pointer;
+                }
+            }
+            .list {
+                width: 75%;
+                margin: 0px auto;
+                .list__component {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .item {
+                        margin-top: 30px;
+                        width: 16.875rem;
+                        border: 1px solid $greystroke;
+                        display: none;
+                        .item__picture {
+                            object-fit: cover;
+                            & img {
+                                width: 100%;
+                            }
+                        }
+                        .data {
+                            text-align: center;
+                            margin-top: 20px;
+                            .item__name {
+                                font-size: $font-size18;
+                                line-height: $line-height23-4;
+                                font-weight: $weight700;
+                                font-family: $font;
+                            }
+                            .item__date {
+                                font-family: $font;
+                                line-height: 3.138rem;
+                                font-weight: $weight400;
+                                font-size: $font-size14;
+                                color: $grey82;
+                            }
+                            .item__button {
+                                line-height: 65px;
+                                margin-bottom: 10px;
+                                .buttons {
+                                    width: 8.125rem;
+                                    height: 2.5rem;
+                                    border: 1px solid $green;
+                                    border-radius: 25px;
+                                    color: $green;
+                                    text-align: center;
+                                    background-color: white;
+                                    font-size: 15px;
+                                    font-weight: 700;
+                                    line-height: 19px;
+                                    &:hover {
+                                        background-color: $darkgreen;
+                                        color: white;
+                                        transition: all 0.5s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .show {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:960px) and (max-width:1440px) {
+    html {
+        font-size: 12.5px;
+    }
+}

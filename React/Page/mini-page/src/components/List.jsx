@@ -239,7 +239,7 @@ const List = () => {
     return (
         <div style={{width:"200px", backgroundColor:"#2D0AF7",display:"flex",flexWrap:"wrap"}}>
             {data.map((user) => (
-                <Link key={user.id} style={{margin: "15px 5px",textDecoration:"none",color:"white",cursor:"pointer"}} to={`/detail/${user.id}/${user.name}/${user.surname}/${user.email}/${user.address.street}/${user.address.suite}/${user.address.city}/${user.address.zipcode}/${user.address.geo.lat}/${user.address.geo.lng}/${user.phone}/${user.website}/${user.company.name}/${user.company.catchPhrase}/${user.company.bs}`} >{user.id}.{user.name}</Link>
+                <Link key={user.id} style={{margin: "15px 5px",textDecoration:"none",color:"white",cursor:"pointer"}} to={`/detail/${user.id}/${user.name}/${user.surname}/${user.email}/${user.address.street}/${user.address.suite}/${user.address.city}/${user.address.zipcode}/${user.address.geo.lat}/${user.address.geo.lng}/${user.phone}/${user.website}/${user.company.name}`} >{user.id}.{user.name}</Link>
              ))}
         </div>
     );

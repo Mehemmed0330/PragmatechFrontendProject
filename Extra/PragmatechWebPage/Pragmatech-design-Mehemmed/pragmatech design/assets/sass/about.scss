@@ -1,0 +1,173 @@
+@import "./colors.scss";
+@import "./font.scss";
+@import "./reset.scss";
+@import "./breakpoint.scss";
+#AllAbout {
+    position: relative;
+    font-family: $font;
+    .container {
+        .summary {
+            display: flex;
+            width: 100%;
+            background-color: $grey;
+            justify-content: space-between;
+            .back__area {
+                .text {
+                    // background-color: $grey;
+                    .text__data {
+                        padding: 7rem 0px;
+                        padding-left: 120px;
+                        width: 33.75rem;
+                        .text__data--title {
+                            font-weight: $weight700;
+                            font-size: $font-size64;
+                            line-height: $line-height80;
+                            font-style: normal;
+                            display: flex;
+                            align-items: center;
+                            .line {
+                                width: 6.375rem;
+                                height: 3px;
+                                background-color: $green;
+                                margin-left: 1.875rem;
+                            }
+                        }
+                        .text__data--about {
+                            font-size: $font-size16;
+                            font-weight: $weight400;
+                            line-height: $line-height25-6;
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+            .front__image {
+                & img {
+                    width: 59.063rem;
+                    height: 58.75rem;
+                }
+            }
+        }
+    }
+}
+
+#MainTimeline {
+    font-family: $font;
+    .container {
+        width: 82%;
+        margin: 0px auto;
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .left__about {
+                width: 31.25rem;
+                .left__about--row {
+                    margin: 1.875rem 0px;
+                    .left__text {
+                        .left__text--title {
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+                            font-size: $font-size24;
+                            font-weight: $weight700;
+                            line-height: $line-height30;
+                            .elements {
+                                position: absolute;
+                                width: 54%;
+                                right: 0;
+                                display: flex;
+                                align-items: center;
+                                .rare {
+                                    width: 45px;
+                                    height: 2px;
+                                    background-color: $green;
+                                }
+                                .circle {
+                                    height: 14px;
+                                    width: 14px;
+                                    background-color: $green;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                        .left__text--about {
+                            display: flex;
+                            justify-content: end;
+                            line-height: $line-height24;
+                            font-size: $font-size16;
+                            font-weight: $weight400;
+                            margin-top: 10px;
+                        }
+                        .left__text--image {
+                            margin-top: 20px;
+                            & img {
+                                width: 31.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .center__line {
+                width: 2px;
+                background-color: $green;
+            }
+            .right__about {
+                width: 31.25rem;
+                margin: 1.875rem 0px;
+                .right__about--row {
+                    margin: 1.875rem 0px;
+                    .right__text {
+                        .right__text--image {
+                            margin-top: 20px;
+                            & img {
+                                width: 31.25rem;
+                            }
+                        }
+                        .right__text--title {
+                            display: flex;
+                            justify-content: start;
+                            font-size: $font-size24;
+                            font-weight: $weight700;
+                            line-height: $line-height30;
+                            align-items: center;
+                            margin-top: 15px;
+                            .elements {
+                                position: absolute;
+                                width: 50.5%;
+                                right: 0;
+                                display: flex;
+                                align-items: center;
+                                .rare {
+                                    width: 45px;
+                                    height: 2px;
+                                    background-color: $green;
+                                }
+                                .circle {
+                                    height: 14px;
+                                    width: 14px;
+                                    background-color: $green;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                        .right__text--about {
+                            display: flex;
+                            justify-content: start;
+                            line-height: $line-height24;
+                            font-size: $font-size16;
+                            font-weight: $weight400;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:960px) and (max-width:1440px) {
+    html {
+        font-size: 12.5px;
+    }
+}

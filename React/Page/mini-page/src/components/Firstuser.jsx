@@ -4,7 +4,7 @@ import "./Firstuser.css"
 
 
 
-const Firstuser = ({route}) => {
+const Firstuser = () => {
 
     const params = useParams();
 

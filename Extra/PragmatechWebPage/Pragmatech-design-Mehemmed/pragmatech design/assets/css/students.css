@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#summaryİnformation {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+#summaryİnformation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#summaryİnformation .container .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#summaryİnformation .container .summary .back__area {
+  margin: 28px 0px;
+}
+
+#summaryİnformation .container .summary .back__area .text {
+  background-color: #F5F5F5;
+}
+
+#summaryİnformation .container .summary .back__area .text .back__text {
+  width: 41rem;
+  margin-left: 13.2rem;
+  padding: 75px 5px;
+}
+
+#summaryİnformation .container .summary .back__area .text .back__text .back__area--title {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+#summaryİnformation .container .summary .back__area .text .back__text .back__area--title .line {
+  width: 3.375rem;
+  height: 0.188rem;
+  background-color: #41E063;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+#summaryİnformation .container .summary .back__area .text .back__text .back__area--about {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: normal;
+}
+
+#summaryİnformation .container .summary .front__image img {
+  width: 52.813rem;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 31.25rem;
+}
+
+#Component {
+  margin-top: 141px;
+  margin-bottom: 222px;
+}
+
+#Component .container .component .components__head {
+  border-bottom: 1px solid #C3C3C3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Component .container .component .components__head .components__head--firstfilter {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 1.25rem 3.438rem;
+  border-bottom: 3px solid #41E063;
+  margin: 0px 90px;
+  cursor: pointer;
+}
+
+#Component .container .component .components__head .components__head--secondfilter {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 1.25rem 3.438rem;
+  margin: 0px 90px;
+  cursor: pointer;
+}
+
+#Component .container .component .list {
+  width: 75%;
+  margin: 0px auto;
+}
+
+#Component .container .component .list .list__component {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Component .container .component .list .list__component .item {
+  margin-top: 30px;
+  width: 16.875rem;
+  border: 1px solid rgba(54, 54, 54, 0.3);
+  display: none;
+}
+
+#Component .container .component .list .list__component .item .item__picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Component .container .component .list .list__component .item .item__picture img {
+  width: 100%;
+}
+
+#Component .container .component .list .list__component .item .data {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Component .container .component .list .list__component .item .data .item__name {
+  font-size: 1.125rem;
+  line-height: 1.463rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+#Component .container .component .list .list__component .item .data .item__date {
+  font-family: "Roboto", sans-serif;
+  line-height: 3.138rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #828282;
+}
+
+#Component .container .component .list .list__component .item .data .item__button {
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+#Component .container .component .list .list__component .item .data .item__button .buttons {
+  width: 8.125rem;
+  height: 2.5rem;
+  border: 1px solid #41E063;
+  border-radius: 25px;
+  color: #41E063;
+  text-align: center;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+#Component .container .component .list .list__component .item .data .item__button .buttons:hover {
+  background-color: #39c958;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#Component .container .component .list .list__component .show {
+  display: block;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1440px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+/*# sourceMappingURL=students.css.map */

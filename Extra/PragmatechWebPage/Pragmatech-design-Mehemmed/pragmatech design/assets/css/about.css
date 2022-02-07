@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#AllAbout {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+#AllAbout .container .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #F5F5F5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#AllAbout .container .summary .back__area .text .text__data {
+  padding: 7rem 0px;
+  padding-left: 120px;
+  width: 33.75rem;
+}
+
+#AllAbout .container .summary .back__area .text .text__data .text__data--title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AllAbout .container .summary .back__area .text .text__data .text__data--title .line {
+  width: 6.375rem;
+  height: 3px;
+  background-color: #41E063;
+  margin-left: 1.875rem;
+}
+
+#AllAbout .container .summary .back__area .text .text__data .text__data--about {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  font-style: normal;
+}
+
+#AllAbout .container .summary .front__image img {
+  width: 59.063rem;
+  height: 58.75rem;
+}
+
+#MainTimeline {
+  font-family: "Roboto", sans-serif;
+}
+
+#MainTimeline .container {
+  width: 82%;
+  margin: 0px auto;
+}
+
+#MainTimeline .container .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+#MainTimeline .container .timeline .left__about {
+  width: 31.25rem;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row {
+  margin: 1.875rem 0px;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--title .elements {
+  position: absolute;
+  width: 54%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--title .elements .rare {
+  width: 45px;
+  height: 2px;
+  background-color: #41E063;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--title .elements .circle {
+  height: 14px;
+  width: 14px;
+  background-color: #41E063;
+  border-radius: 50%;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--image {
+  margin-top: 20px;
+}
+
+#MainTimeline .container .timeline .left__about .left__about--row .left__text .left__text--image img {
+  width: 31.25rem;
+}
+
+#MainTimeline .container .timeline .center__line {
+  width: 2px;
+  background-color: #41E063;
+}
+
+#MainTimeline .container .timeline .right__about {
+  width: 31.25rem;
+  margin: 1.875rem 0px;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row {
+  margin: 1.875rem 0px;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--image {
+  margin-top: 20px;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--image img {
+  width: 31.25rem;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--title .elements {
+  position: absolute;
+  width: 50.5%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--title .elements .rare {
+  width: 45px;
+  height: 2px;
+  background-color: #41E063;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--title .elements .circle {
+  height: 14px;
+  width: 14px;
+  background-color: #41E063;
+  border-radius: 50%;
+}
+
+#MainTimeline .container .timeline .right__about .right__about--row .right__text .right__text--about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1440px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

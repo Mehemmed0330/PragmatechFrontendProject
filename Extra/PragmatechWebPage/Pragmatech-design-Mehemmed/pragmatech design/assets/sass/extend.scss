@@ -1,0 +1,66 @@
+// green button
+%btn-green {
+    width: 8.125rem;
+    height: 2.5rem;
+    border: 1px solid $green;
+    border-radius: 25px;
+    color: $green;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    &:hover {
+        background-color: $darkgreen;
+        color: white;
+        transition: all 0.5s;
+    }
+}
+
+;
+%blog-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 73.125rem;
+    margin: 0 auto;
+    .box {
+        margin-bottom: 1.875rem;
+        .box-img {
+            width: 16.875rem;
+            height: 9.75rem;
+            object-fit: cover;
+        }
+        .box-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 16.75rem;
+            height: 16.75rem;
+            border: 1px solid #3636364D;
+            background: #FFFFFF;
+            .box-text-p {
+                text-align: center;
+                margin: 1.25rem 2.75rem 2.7rem 2.75rem;
+                font-weight: 700;
+                font-size: $font-size18;
+                line-height: $line-height23-4;
+                color: $darkgrey;
+            }
+            ;
+            .buttons {
+                @extend %btn-green;
+                margin-top: 2.688rem;
+            }
+            ;
+            .box-text-p2 {
+                font-weight: $weight400;
+                font-size: $font-size14;
+                line-height: $line-height18-2;
+                color: $gray82;
+            }
+        }
+        ;
+    }
+    ;
+}
