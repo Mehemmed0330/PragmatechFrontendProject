@@ -2,11 +2,8 @@ import React ,{Fragment, useContext} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 import {useNavigate} from "react-router-dom"
 import { context } from "../App";
-
-
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -52,16 +49,14 @@ export default function CustomArrows()  {
             {dataa.movies.map((underdata)=>
             
                 <div key={underdata.id}>
-                    {/* <div><p>{underdata.categorie}</p></div> */}
                     <div>
-                    
                 <div style={{display:"flex"}}>
                     <div style={{backgroundImage:`url(${underdata.miniimage})`,height:"150px" , width:"400px",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundSize:"cover",cursor:"pointer",margin:"0px 5px"}} 
                         onClick={()=>{navigate("/detail/"+dataa.id+"/"+underdata.id)}}
                     ></div>
                  </div>
                </div>
-                    </div>
+                  </div>
                  
 
             )}

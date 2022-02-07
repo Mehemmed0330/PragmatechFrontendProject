@@ -5,12 +5,16 @@ import { context } from '../App';
 
 const Detail = () => {
     const alldata = useContext(context);
-    const {catagoryid,id} = useParams();
-    const data = alldata?.find(w=>w.id=catagoryid)?.movies?.find(w=>w.id=id)
+    const {catagoryid,id,name} = useParams();
+    const data = alldata?.find(w=>w.id=catagoryid)?.movies?.find(w=>w.id=id,name)
+    
+
+
+
     console.log(data)
     return (
         <div>
-            {data.id}
+            {data.name}
         </div>
     );
 }

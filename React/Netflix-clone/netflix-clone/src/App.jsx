@@ -50,10 +50,11 @@ export default App;
             movies:[
                 {   id:1,
                     miniimage:minislider1,
-                    categorie:"Trending Now"
+                    
                 },
                 {   id:2,
                     miniimage:minislider2,
+                    
                 },
                 {
                     id:3,
@@ -78,11 +79,10 @@ export default App;
             ]
         },
         {   id:2,
-            catagoryName:"Action",
+            catagoryName:"Romantic",
             movies:[
                 {   id:1,
                     miniimage:minislider1,
-                    categorie:"Trending Now"
                 },
                 {   id:2,
                     miniimage:minislider2,
@@ -110,11 +110,10 @@ export default App;
             ]
         },
         {   id:3,
-            catagoryName:"Action",
+            catagoryName:"Peace",
             movies:[
                 {   id:1,
                     miniimage:minislider1,
-                    categorie:"Trending Now"
                 },
                 {   id:2,
                     miniimage:minislider2,
