@@ -18,10 +18,14 @@ class Page extends Component {
            num:prevState.num +1
             
         }))
-        if(this.state.num > 20 &&  this.state.num<25){
-            console.log("Hello")
+        if(this.state.num >= 20 && this.state.num < 25){
+            this.setState({color: "red"});
+        }
+        else{
+            this.setState({color: "blue"});
         }
     }
+    
 
     render() {
         return (
