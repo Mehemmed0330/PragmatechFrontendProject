@@ -3,7 +3,7 @@ import {useEffect , useState } from 'react'
 import {useNavigate} from "react-router-dom"
 
 const MainPage = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState();
     useEffect(() => {
       fetch("https://jsonplaceholder.typicode.com/posts").then(response =>{
         return response.json()
