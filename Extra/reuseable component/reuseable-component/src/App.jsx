@@ -22,7 +22,7 @@ export default App;
 
 
 const data = [
-  {id:1 , name:"Ali" , age:18},
+  {id:1 , name:"Muhammad" , age:18},
   {id:2 , name:"Muhammad" , age:19}
 
 ]
