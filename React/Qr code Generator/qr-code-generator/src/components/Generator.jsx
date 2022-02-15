@@ -5,7 +5,7 @@ import QRCode from "qrcode"
 const Generator = () => {
     const [text, setText] = useState("");
     const [view, setView] = useState(false);
-    const [src, setSrc] = useState("");
+    const [src, setSrc] = useState()
 
 
     const change =() =>{
@@ -13,7 +13,7 @@ const Generator = () => {
     }
     useEffect(() => {
         QRCode.toDataURL(text).then(response =>{
-            setSrc(response)
+            setSrc(response) 
         })
         
     }, [text]);
@@ -24,7 +24,9 @@ const Generator = () => {
         <div>
             <input type="text" onChange={(e)=>setText(e.target.value)} />
             <button onClick={change}>Generate</button>
-            {view ? <img src={src} alt="" /> :""}
+            <div>
+                {view ? <img src={src} alt=""  /> :""}
+            </div>
             
         </div>
     );
