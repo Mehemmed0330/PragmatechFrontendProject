@@ -18,7 +18,7 @@ function App() {
         return response.json()
       })
       .then(json => {
-        json.results.map( ent => {
+        json.results.forEach( ent => {
           getList(ent.id)
         });
       })
