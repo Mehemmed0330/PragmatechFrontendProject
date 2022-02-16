@@ -4,14 +4,15 @@ import {useState} from "react"
 
 function App() {
   const [list, setList] = useState([]);
+  const header = {
+    "Content-Type":"application/json;charset=utf-8",
+    "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODVhMTA3ZjBjOTJjZmRhNDY3ZGIyMjFjY2M1MDJmNyIsInN1YiI6IjVmMTk4MDI0YTZkOTMxMDAzNzg3MDUyZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aVQ18IpQSKo3ThEmEGr3JIMqfU24NvOo974ododdTBk"
+  }
 
   const readData = () => {
       fetch("https://api.themoviedb.org/4/account/5f198024a6d931003787052f/lists" , {
         method:"GET",
-        headers:{
-          "Content-Type":"application/json;charset=utf-8",
-          "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODVhMTA3ZjBjOTJjZmRhNDY3ZGIyMjFjY2M1MDJmNyIsInN1YiI6IjVmMTk4MDI0YTZkOTMxMDAzNzg3MDUyZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aVQ18IpQSKo3ThEmEGr3JIMqfU24NvOo974ododdTBk"
-        }
+        headers:header
       })
       .then(response => {
         return response.json()
@@ -26,10 +27,8 @@ function App() {
 
   const getList = (id) =>{
     fetch("https://api.themoviedb.org/4/list/" + id ,{
-      headers:{
-        "Content-Type":"application/json;charset=utf-8",
-        "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODVhMTA3ZjBjOTJjZmRhNDY3ZGIyMjFjY2M1MDJmNyIsInN1YiI6IjVmMTk4MDI0YTZkOTMxMDAzNzg3MDUyZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aVQ18IpQSKo3ThEmEGr3JIMqfU24NvOo974ododdTBk"
-      }
+      headers:header
+
     }).then(data => data.json())
     .then(data => {
       setList(prevList => data.results.concat(prevList))
