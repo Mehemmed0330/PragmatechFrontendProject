@@ -1,32 +1,48 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import QRCode from "qrcode"
+
 
 const Generator = () => {
-    const [text, setText] = useState("");
-    const [view, setView] = useState(false);
-    const [src, setSrc] = useState()
+    const [temp, setTemp] = useState("");
+    const [word, setWord] = useState("");
+    const [bgColor, setBgColor] = useState("ffffff");
+    const [qrCode, setQrCode] = useState("");  
+    const [view, setView] = useState(false)  
 
-
-    const change =() =>{
-        setView(true)
-    }
-    useEffect(() => {
-        QRCode.toDataURL(text).then(response =>{
-            setSrc(response) 
-        })
-        
-    }, [text]);
     
-   
+    
+    useEffect(() => {
+        setQrCode
+     (`http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${100}x${100}&bgcolor=${bgColor}`);
+      }, [word, bgColor]);
+      
+
+      function handleClick() {
+        setView(true)
+        setWord(temp);
+      }
 
     return (
         <div>
-            <input type="text" onChange={(e)=>setText(e.target.value)} />
-            <button onClick={change}>Generate</button>
-            <div>
-                {view ? <img src={src} alt=""  /> :""}
-            </div>
+        <div>
+          <input type="text" onChange={
+            (e) => {setTemp(e.target.value)}}
+            placeholder="Enter text to encode" />
+          <button className="button" 
+            onClick={handleClick}>
+            Generate
+          </button>
+        </div>
+        <div>
+          <h5>Background Color:</h5>
+          <input type="color" onChange={(e) => 
+          { setBgColor(e.target.value.substring(1)) }} />
+        </div>
+      
+      <div>
+        {view ? <img src={qrCode} alt="" />  :  null}
+        
+      </div>
             
         </div>
     );
