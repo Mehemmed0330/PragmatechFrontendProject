@@ -8,9 +8,7 @@ const Generator = () => {
     const [bgColor, setBgColor] = useState("ffffff");
     const [qrCode, setQrCode] = useState("");  
     const [view, setView] = useState(false)  
-
-    
-    
+   
     useEffect(() => {
         setQrCode
      (`http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${100}x${100}&bgcolor=${bgColor}`);
@@ -23,8 +21,8 @@ const Generator = () => {
       }
 
     return (
-        <div>
-        <div>
+        <div style = {{textAlign:"center"}}>
+        <div >
           <input type="text" onChange={
             (e) => {setTemp(e.target.value)}}
             placeholder="Enter text to encode" />
@@ -39,7 +37,7 @@ const Generator = () => {
           { setBgColor(e.target.value.substring(1)) }} />
         </div>
       
-      <div>
+      <div> <br/>
         {view ? <img src={qrCode} alt="" />  :  null}
         
       </div>
