@@ -1,7 +1,7 @@
 import React from 'react';
-import Members from "../components/Members"
+import Members from "./Members"
 
-const House = ({number}) => {
+const Number = ({number}) => {
     return (
         <div>
             <h1>{number.deaths}</h1>
@@ -10,4 +10,4 @@ const House = ({number}) => {
     );
 }
 
-export default House;
+export default Number;

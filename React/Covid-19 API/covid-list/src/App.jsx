@@ -1,6 +1,6 @@
 import './App.css';
 import UseFetch from "./components/UseFetch"
-import House from "./components/House"
+import Number from "./components/Number"
 
 function App() {
   const {data,setData} = UseFetch()
@@ -13,7 +13,7 @@ function App() {
       onChange={(e) => setData({ ...data, slug: e.target.value })}
     />
     <br />
-    {data.results.length > 0 ? <House family={data.results[0]} /> : null}
+    {data.results.length > 0 ? <Number family={data.results[0]} /> : null}
   </main>
   );
 }

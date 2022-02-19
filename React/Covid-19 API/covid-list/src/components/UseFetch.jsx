@@ -5,7 +5,7 @@ import {useState , useEffect} from "react"
 const UseFetch = () => {
     const [data, setData] = useState({
         slug:"",
-        results:[],
+        results:"",
     });
 
     useEffect(() => {
@@ -13,7 +13,7 @@ const UseFetch = () => {
             const timeoutId = setTimeout(() => {
                 const fetch = async () =>{
                     try {
-                        const res = await Got.get(`/${data.slug}`);
+                        const res = await Got.get(`/${data.slug}` , {headers:""});
                         setData({ ...data, results: res.data });
                     } catch (error) {
                         console.log(error)
@@ -24,7 +24,7 @@ const UseFetch = () => {
             return () => clearTimeout(timeoutId)
 
         }
-    }, [data]);
+    }, [data.slug]);
 
     return { data, setData };
 };

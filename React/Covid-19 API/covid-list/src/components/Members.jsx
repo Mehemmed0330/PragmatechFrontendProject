@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Members = ({members}) => {
+const Country = ({members}) => {
     return (
         <ul>
           {members.map((el, i) => (
@@ -10,4 +10,4 @@ const Members = ({members}) => {
       );
 }
 
-export default Members;
+export default Country;
