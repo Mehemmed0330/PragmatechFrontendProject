@@ -5,7 +5,7 @@ const UseCreate = () => {
     const [isLoading, setLoading] = useState(false);
     const CreateList = (name) =>{
         setLoading(true)
-        fetch("https://developers.themoviedb.org/4/list" , {
+        fetch("https://api.themoviedb.org/4/list" , {
             headers:headerPost,
             method:"POST",
             body:JSON.stringify({
@@ -20,6 +20,7 @@ const UseCreate = () => {
         })
         .catch(e => {setLoading(false)})
     }
+    
 
 
     return {isLoading,CreateList}
