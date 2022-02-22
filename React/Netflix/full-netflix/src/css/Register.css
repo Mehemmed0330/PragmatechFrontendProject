@@ -1,0 +1,35 @@
+.Container {
+    height: calc(100vh - 125px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e5e5;
+}
+
+.alert {
+    text-align: center;
+    width: 300px;
+    line-height: 1.2em;
+}
+
+.alert p {
+    line-height: 1.4em;
+}
+
+.btn {
+    font-size: 17px;
+    font-family: "Arial";
+    background: #e50914;
+    border-radius: 3px;
+    margin: 15px auto;
+    display: block;
+    padding: 10px 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease
+}
+
+.btn:hover {
+    background: #f6121d
+}
