@@ -95,10 +95,16 @@
     font-family: "Arial";
     background: #e50914;
     border-radius: 3px;
-    /* margin: 15px auto; */
+    margin: 0 auto;
     display: block;
     padding: 10px 50px;
     color: #fff;
     border: none;
     padding: 10px 100px;
+    transition: all 0.4s ease;
+    cursor: pointer
+}
+
+.btn2:hover {
+    background: #f6121d
 }

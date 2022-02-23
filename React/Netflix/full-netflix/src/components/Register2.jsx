@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Register2.css"
-import {useState , useEffect} from "react"
+import {useState , useEffect } from "react"
+import {useNavigate} from "react-router-dom"
 
 const Register2 = () => {
     const [color, setColor] = useState("#ef6b72");
@@ -11,6 +12,15 @@ const Register2 = () => {
 
     const [colorPremium, setColorPremium] = useState("#ef6b72");
     const [fontPremium, setFontPremium] = useState("#a6a6a6");
+    
+
+    const pass = () =>{
+        if(color === "rgb(229, 9, 20" || colorStandard === "rgb(229, 9, 20" || colorPremium === "rgb(229, 9, 20" ) {
+            navigate("/registration3")
+        }else{
+            alert("You must select a plan to continue")
+        }
+    }
 
     const changeColor = ()=>{
         setColor("rgb(229, 9, 20")
@@ -59,6 +69,7 @@ const Register2 = () => {
         }
     }, [colorPremium]);
     
+    const navigate = useNavigate()
 
     return (
         <div style = {{width:"1100px", margin:"0px auto"}}>
@@ -133,8 +144,8 @@ const Register2 = () => {
                     </div>
                 </div>
                 
-                <footer style = {{margin:"10px"}}>
-                <button className= "btn2">Continue</button>
+                <footer style = {{padding:"10px"}}>
+                <button className= "btn2" onClick = {pass}>Continue</button>
                 </footer>
             </div>
             
