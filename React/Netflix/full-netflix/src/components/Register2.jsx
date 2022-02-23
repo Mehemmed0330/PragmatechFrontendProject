@@ -132,7 +132,12 @@ const Register2 = () => {
                         <p className = "catagories" style = {{color:fontPremium}}>YES</p>
                     </div>
                 </div>
+                
+                <footer style = {{margin:"10px"}}>
+                <button className= "btn2">Continue</button>
+                </footer>
             </div>
+            
         </div>
     );
 }

@@ -89,3 +89,16 @@
 .different {
     background: #222;
 }
+
+.btn2 {
+    font-size: 17px;
+    font-family: "Arial";
+    background: #e50914;
+    border-radius: 3px;
+    /* margin: 15px auto; */
+    display: block;
+    padding: 10px 50px;
+    color: #fff;
+    border: none;
+    padding: 10px 100px;
+}
