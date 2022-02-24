@@ -16,7 +16,7 @@ function App() {
         <Route path ="/registration" element = {<Register/>}/>
         <Route path = "/registration2" element = {<Register2/>}/>
         <Route path = "/registration3" element = {<Register3/>}/>
-        <Route path = "/success/:name" element = {<Success/>}/>
+        <Route path = "/success" element = {<Success/>}/>
       </Routes>
       
     </div>

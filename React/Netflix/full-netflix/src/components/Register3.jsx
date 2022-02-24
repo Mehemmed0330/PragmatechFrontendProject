@@ -1,11 +1,13 @@
 import React from 'react';
 import "../css/Register3.css"
-import {useLocation, useNavigate} from "react-router-dom"
+import {useNavigate , useLocation} from "react-router-dom"
 import {useState} from "react"
 
 const Register3 = () => {
+    const {plan} = useLocation()?.state
     const navigate = useNavigate()
     const [name, setName] = useState();
+    
     
     
     return (
@@ -21,7 +23,7 @@ const Register3 = () => {
                     <input type="text" placeholder = 'LastName'/> 
                     <input type="password" placeholder='Password'/> 
                     <input type="text" placeholder='Email'/> 
-                    <button className ="btn3" onClick = {() => navigate("/success", {state:{name:name}})}>CONFIRM</button>
+                    <button className ="btn3" onClick = {() => navigate("/success", {state:{name:name,plan:plan}})}>CONFIRM</button>
                     
                     
                 </div>

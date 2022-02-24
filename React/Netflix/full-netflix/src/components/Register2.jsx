@@ -14,13 +14,13 @@ const Register2 = () => {
     const [fontPremium, setFontPremium] = useState("#a6a6a6");
     
 
-    const pass = () =>{
-        if(color === "rgb(229, 9, 20" || colorStandard === "rgb(229, 9, 20" || colorPremium === "rgb(229, 9, 20" ) {
-            navigate("/registration3")
-        }else{
-            alert("You must select a plan to continue")
-        }
-    }
+    // const pass = () =>{
+    //     if(color === "rgb(229, 9, 20" || colorStandard === "rgb(229, 9, 20" || colorPremium === "rgb(229, 9, 20" ) {
+    //         navigate("/registration3")
+    //     }else{
+    //         alert("You must select a plan to continue")
+    //     }
+    // }
 
     const changeColor = ()=>{
         setColor("rgb(229, 9, 20")
@@ -72,7 +72,7 @@ const Register2 = () => {
     const navigate = useNavigate()
 
     return (
-        <div style = {{width:"1100px", margin:"0px auto"}}>
+        <div style = {{width:"1100px", margin:"0px auto",height:"87vh"}}>
             <div className="second-register">
                 <div className="top">
                     <h4>STEP 2 OF 3</h4>
@@ -145,7 +145,8 @@ const Register2 = () => {
                 </div>
                 
                 <footer style = {{padding:"10px"}}>
-                <button className= "btn2" onClick = {pass}>Continue</button>
+                <button className= "btn2" onClick = {() => {navigate(color === "rgb(229, 9, 20" || colorStandard === "rgb(229, 9, 20" || colorPremium === "rgb(229, 9, 20" ? "/registration3" :alert("Hi") ,
+                 {state:color === "rgb(229, 9, 20" || colorStandard === "rgb(229, 9, 20" || colorPremium === "rgb(229, 9, 20" ? {plan:color === "rgb(229, 9, 20" ? "Basic" :colorStandard === "rgb(229, 9, 20" ? "Standard" : "Premium"} :undefined  })}}>Continue</button>
                 </footer>
             </div>
             
