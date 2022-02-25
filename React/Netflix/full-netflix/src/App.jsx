@@ -5,6 +5,7 @@ import Register from "./components/Register"
 import Register2 from "./components/Register2"
 import Register3 from "./components/Register3"
 import Success from "./components/Success"
+import  Detail from "./components/Detail"
 import {Routes,Route} from "react-router-dom"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path = "/registration2" element = {<Register2/>}/>
         <Route path = "/registration3" element = {<Register3/>}/>
         <Route path = "/success" element = {<Success/>}/>
+        <Route path = "/detail/" element = {<Detail/>}/>
       </Routes>
       
     </div>
