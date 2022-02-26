@@ -2,10 +2,12 @@ import React from 'react';
 import {useEffect} from "react"
 import {useState} from "react"
 import {useNavigate} from "react-router-dom"
+import {useRef} from "react"
 
 
 const Home = () => {
     const [data, setData] = useState([]);
+    const dataRef = useRef([])
     const navigate = useNavigate();
     const header = {
         "Content-Type": "application/json;charset=utf-8",
@@ -18,11 +20,13 @@ const Home = () => {
         .then(response => {return response.json()})
         .then(data => {
             data.results.forEach(element =>{
-                getList(element.id)
+                dataRef.current.push(getList(element.id))
             })
 
-            Promise.all(data).then(res => {
-                console.log(res)
+            Promise.all(dataRef.current).then(res => {
+                Promise.all(res.map(response => response.json())).then(allJson => {
+                    setData(allJson)
+                })
             })
         }).catch(put => console.error(put))
     }, []);
@@ -30,10 +34,7 @@ const Home = () => {
     const getList = (id) => {
         return fetch("https://api.themoviedb.org/4/list/" + id , {
             headers:header
-        }).then(response => {return response.json()})
-        .then(data => {
-            setData(prevData => data.results.concat(prevData))
-        }).catch(put => console.error(put))
+        })
     }
 
     return (

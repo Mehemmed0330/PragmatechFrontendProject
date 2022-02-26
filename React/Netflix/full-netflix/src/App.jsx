@@ -18,7 +18,7 @@ function App() {
         <Route path = "/registration2" element = {<Register2/>}/>
         <Route path = "/registration3" element = {<Register3/>}/>
         <Route path = "/success" element = {<Success/>}/>
-        <Route path = "/detail/" element = {<Detail/>}/>
+        <Route path = "/detail/:id" element = {<Detail/>}/>
       </Routes>
       
     </div>
