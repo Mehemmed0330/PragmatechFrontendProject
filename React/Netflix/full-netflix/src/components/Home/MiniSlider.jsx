@@ -2,8 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import useAPI from "../hook/api"
-
+import Item from "../Home/Item"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -27,13 +26,10 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default function CustomArrows() {
-
-  const {movies} =  useAPI()
-  console.log(movies)
+export default function CustomArrows({title ,movies}) {
    
     const settings = {
-      dots: false,
+      dots: true,
       infinite: false,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -41,12 +37,14 @@ export default function CustomArrows() {
       prevArrow: <SamplePrevArrow />
     };
 
-    
+
 
     return (
-      <div>
-        <h2>Custom Arrows</h2>
+      <div style = {{margin:"0px"}}>
+        <h2>{title}</h2>
         <Slider {...settings}>
+          
+          {movies.map((s, i) => <Item  key={i} img={s.img} title={s.title}/>)}
           
         </Slider>
       </div>

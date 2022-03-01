@@ -15,21 +15,21 @@ const instanceV3 = axios.create({
 })
 
 export default function useAPI() {
-    const [movies, setMovies] = useState([]);
+    const [list, setList] = useState([]);
 
     useEffect(() => {
         (
             async () => {
-                const arr = []
+                const listArr = []
                 const AllLists = await getAllList()
                 for (const list of AllLists.results) {
                     const l = await getList(list.id)
                     if (l.results.length > 0) {
-                        arr.push(l.results)
+                        listArr.push(l)
                     }
                     
                 }
-                setMovies(arr)
+                setList(listArr)
             }
         )()
     }, []);
@@ -46,5 +46,5 @@ export default function useAPI() {
    }
   
     
-    return {movies}
+    return {list}
 }
