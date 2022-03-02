@@ -7,10 +7,11 @@ import "../Home/MiniSlider.css"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
+
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" , right:"-25px" }}
+      style={{ ...style, display: "flex", background: "rgba(0,0,0,0.1)",height:"100%" , width:"50px", alignItems:"center" , justifyContent:"center",position:"absolute",margin:"0px 0px"}}
       onClick={onClick}
     />
   );
@@ -21,7 +22,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" , left:"-25px" }}
+      style={{ ...style, display: "flex", background: "rgba(0,0,0,0.1)" , height:"100%" , width:"50px", alignItems:"center" , justifyContent:"center",position:"absolute",zIndex:"100",color:"white",margin:"0px -20px",fontSize:"50px" }}
       onClick={onClick}
     />
   );
@@ -42,7 +43,7 @@ export default function CustomArrows({title ,movies}) {
 
 
     return (
-      <div style = {{}}>
+      <div style = {{padding:"0px 40px"}}>
         <h2 style = {{color:"white"}}>{title}</h2>
         <Slider {...settings}>
           
