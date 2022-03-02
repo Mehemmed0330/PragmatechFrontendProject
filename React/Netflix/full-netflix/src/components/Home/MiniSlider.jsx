@@ -30,9 +30,9 @@ function SamplePrevArrow(props) {
 export default function CustomArrows({title ,movies}) {
    
     const settings = {
-      dots: true,
+      dots: false,
       infinite: false,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
