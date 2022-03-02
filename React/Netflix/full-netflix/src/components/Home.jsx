@@ -5,10 +5,12 @@ import useAPI from "./hook/api"
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { SelectList } from "./redux/slices/lists"
+import {useSelector} from "react-redux"
 
 
 const Home = () => {
-    const { list } = useAPI()
+    const list = useSelector(SelectList)
     console.log(list)
 
     return (
