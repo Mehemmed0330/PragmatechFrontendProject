@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { login } from '../redux/user'
+import { login, logout } from '../redux/user'
 
 export default function Login() {
   const dispatch = useDispatch()
@@ -18,6 +18,13 @@ export default function Login() {
         }}
       >
         Login
+      </button>
+      <button
+        onClick={() => {
+          dispatch(logout())
+        }}
+      >
+        Logout
       </button>
     </div>
   )
