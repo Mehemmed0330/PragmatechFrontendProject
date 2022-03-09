@@ -8,7 +8,7 @@ import { Provider } from 'react-redux'
 import userReducer from './redux/user'
 import themeReducer from './redux/theme'
 
-const store = configureStore({
+const Store = configureStore({
   reducer: {
     user: userReducer,
     theme: themeReducer,
@@ -17,7 +17,7 @@ const store = configureStore({
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={Store}>
       <App />
     </Provider>
   </React.StrictMode>,
