@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import backimg from "../image/backimage.webp"
+import SectionProjects from "./SectionProjects"
 import "../css/Projects.css"
 
 export default class Projects extends Component {
@@ -12,7 +13,7 @@ export default class Projects extends Component {
         </div>
     </div>
     <div>
-      Hello
+      <SectionProjects/>
     </div>
     </div>;
   }

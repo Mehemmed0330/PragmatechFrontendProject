@@ -1,24 +1,20 @@
-import React from 'react';
-import { useParams } from "react-router-dom"
-import { useState, useEffect } from "react"
+import React from 'react'
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { instanceV3 } from './hook/api'
 
 const Detail = () => {
-    const {id} = useParams()
-    const [data, setData] = useState();
+  const { id, type } = useParams()
+  const [data, setData] = useState()
 
-    useEffect(() => {
-        fetch("/movie/" + id).then(response =>{
-          return response.json()
-        }).then(information => setData(information))
-      }, [id]);
+  useEffect(() => {
+    (async () => {
+      const { data } = await instanceV3.get(`/${type}/${id}`)
+      setData(data)
+    })()
+  }, [])
 
-    return (
-        
-
-        <div>
-            {data.id}
-        </div>
-    );
+  return <div>{data?.img}</div>
 }
 
-export default Detail;
+export default Detail

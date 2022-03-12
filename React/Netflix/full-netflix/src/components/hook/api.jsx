@@ -60,5 +60,5 @@ export default function useAPI() {
    }
   
     
-    return true
+    return {getList}
 }
