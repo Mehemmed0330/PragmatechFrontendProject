@@ -94,7 +94,7 @@ const reducer = (state, action) => {
 export default function Posts() {
 
     const [state, dispatch] = useReducer(reducer, initialState);
-    const { likes, dislikes, active } = state;
+    const { likes, active } = state;
 
 
     const classes = useStyles();
