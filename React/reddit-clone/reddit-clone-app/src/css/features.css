@@ -1,0 +1,33 @@
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.features .campaign__link {
+  background-color: #edeff1;
+  outline: none;
+  border-radius: 50px;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.features .campaign__link:hover {
+  background-color: #d4d7d9;
+}
+/*# sourceMappingURL=features.css.map */

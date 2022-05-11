@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap');
+.markdown {
+    margin-top: 20px;
+    border: 1px solid #edeff1;
+    border-radius: 4px;
+    .markdown__area {
+        border-radius: 4px;
+        min-height: 122px;
+        width: 100%;
+        padding: 0px 2px;
+        .text {
+            overflow: hidden;
+            overflow-wrap: break-word;
+            height: 122px;
+            opacity: .5;
+            width: 100%;
+            border: none;
+            padding: 10px 0px;
+            outline: none;
+            font-size: 12px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+    }
+}

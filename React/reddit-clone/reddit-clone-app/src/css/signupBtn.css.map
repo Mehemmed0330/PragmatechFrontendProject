@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,2FAAI;AACZ,AAAA,WAAW,CAAC;EACR,SAAS,EAAE,IAAI;EACf,SAAS,EAAE,IAAI;CAMlB;;AARD,AAGI,WAHO,CAGL,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB;EACpC,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../scss/signupBtn.scss"
+    ],
+    "names": [],
+    "file": "signupBtn.css"
+}

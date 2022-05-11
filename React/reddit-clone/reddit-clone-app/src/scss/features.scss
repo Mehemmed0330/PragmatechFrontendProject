@@ -1,0 +1,20 @@
+.features {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .campaign__link {
+        background-color: #edeff1;
+        outline: none;
+        border-radius: 50px;
+        padding: 0;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        &:hover {
+            background-color: #d4d7d9;
+        }
+    }
+}

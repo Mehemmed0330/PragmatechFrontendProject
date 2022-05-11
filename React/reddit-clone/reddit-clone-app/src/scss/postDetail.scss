@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap');
+.postDetail {
+    font-family: 'Noto Sans', sans-serif;
+    .close {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: black;
+        cursor: pointer;
+        .close__about {
+            display: flex;
+            align-items: center;
+            color: #D7DADC;
+            font-size: 14px;
+            font-weight: 500;
+            & p {
+                margin-left: 10px;
+            }
+        }
+        .close__post {
+            display: flex;
+            align-items: center;
+            & span {
+                color: #D7DADC;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    .detail {
+        background-color: white;
+        margin: 0px auto;
+        .post__detail {
+            margin: 0 auto;
+            width: 80%;
+            .detail__view {
+                .detail__about {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0px;
+                    .detail__logo {
+                        & img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .detail__group {
+                        margin-left: 10px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    .detail__by {
+                        margin-left: 10px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    .detail__date {
+                        margin-left: 10px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .detail__about--post {
+                & span {
+                    margin: 20px 0px;
+                    font-size: 24px;
+                }
+                & p {
+                    margin: 15px 0px;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+            .detail__image {
+                width: 80%;
+                margin: 0px auto;
+                & img {
+                    width: 100%;
+                }
+            }
+            .detail__actions {
+                display: flex;
+                align-items: center;
+                max-width: 30%;
+                margin: 10px 0px;
+                justify-content: space-between;
+                .detail__action {
+                    display: flex;
+                    align-items: center;
+                    // margin: 0px 5px;
+                    font-size: 15px;
+                    color: #878a8c;
+                    font-weight: 500;
+                    & h1 {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

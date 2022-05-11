@@ -1,0 +1,30 @@
+.image__area {
+    display: flex;
+    min-height: 280px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px dashed #edeff1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    & p {
+        color: #0079d3;
+    }
+    .image__upload {
+        display: inline-block;
+        margin: 10px 8px;
+        line-height: 18px;
+        text-transform: unset;
+        min-height: 32px;
+        min-width: 32px;
+        padding: 4px 16px;
+        font-family: Noto Sans, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: white;
+        color: #0079d3;
+        border: 1px solid #0079d3;
+        border-radius: 30px;
+    }
+}

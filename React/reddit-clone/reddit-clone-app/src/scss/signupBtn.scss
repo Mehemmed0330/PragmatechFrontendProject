@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap');
+.signup-btn {
+    min-width: 32px;
+    min-width: 32px;
+    & span {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

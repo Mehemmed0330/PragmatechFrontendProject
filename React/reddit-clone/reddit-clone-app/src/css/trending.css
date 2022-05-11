@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap");
+.trending__name span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: unset;
+  color: #1a1a1b;
+  font-family: inherit;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.trending__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trending__items .trending__item {
+  height: 178px;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 238px;
+  background-size: cover;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  cursor: pointer;
+}
+
+.trending__items .trending__item .item__inner {
+  padding: 15px 20px;
+}
+
+.trending__items .trending__item .item__inner .news__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.trending__items .trending__item .item__inner .news__text p {
+  display: -webkit-inline-box;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 40px;
+}
+
+.trending__items .trending__item .item__inner .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trending__items .trending__item .item__inner .group .group__logo img {
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin-right: 4px;
+  vertical-align: sub;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.trending__items .trending__item .item__inner .group .group__name {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 11px;
+}
+/*# sourceMappingURL=trending.css.map */

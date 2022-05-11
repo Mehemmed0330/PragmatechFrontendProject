@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap");
+.action__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.action__post .post__btn {
+  font-family: Noto Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: unset;
+  line-height: 17px;
+  text-transform: unset;
+  min-height: 32px;
+  min-width: 32px;
+  padding: 4px 20px;
+  background-color: #0079d3;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.action__post .post__btn--different {
+  border: 1px solid #0079d3;
+  background-color: white;
+  color: #0079d3;
+}
+/*# sourceMappingURL=postAction.css.map */

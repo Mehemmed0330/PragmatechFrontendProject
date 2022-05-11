@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700&display=swap');
+.trending__name {
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-transform: unset;
+        color: #1a1a1b;
+        font-family: inherit;
+        font-family: 'Noto Sans', sans-serif;
+    }
+}
+
+.trending__items {
+    display: flex;
+    color: white;
+    margin-top: 10px;
+    justify-content: space-between;
+    // width: 75%;
+    // margin: 0px auto;
+    .trending__item {
+        // background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62), rgba(2, 2, 2, 0.66), #080707ab), url(../images//itemPicture2.webp);
+        height: 178px;
+        overflow: hidden;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 238px;
+        background-size: cover;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        cursor: pointer;
+        .item__inner {
+            padding: 15px 20px;
+            .news__title {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                font-family: 'Noto Sans', sans-serif;
+            }
+            .news__text p {
+                display: -webkit-inline-box;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Noto Sans', sans-serif;
+                line-height: 1.2em;
+                letter-spacing: 0.5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                max-height: 40px;
+            }
+            .group {
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                .group__logo img {
+                    font-size: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    margin-right: 4px;
+                    vertical-align: sub;
+                    width: 16px;
+                    border-radius: 50%;
+                }
+                .group__name {
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

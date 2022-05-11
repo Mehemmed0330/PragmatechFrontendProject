@@ -1,0 +1,28 @@
+header {
+    height: 3rem;
+    // background-color: yellow;
+    padding: 0px 20px;
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .head__logo {
+            .logo__link {
+                color: "inherit";
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                .logo__head {
+                    padding: 8px 8px 8px 0px;
+                    width: 32px;
+                    height: 32px;
+                }
+                .logo__write {
+                    height: 18px;
+                    margin-right: 20px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
