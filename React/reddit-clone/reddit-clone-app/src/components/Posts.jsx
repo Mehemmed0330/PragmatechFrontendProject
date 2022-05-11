@@ -1,5 +1,7 @@
 import React from 'react'
 import CreatePanel from "./CreatePanel";
+import ReactDOM from "react-dom";
+import { useReducer, useState } from "react"
 
 import { AiOutlineFire } from "react-icons/ai"
 import { MdKeyboardArrowDown } from "react-icons/md"
@@ -17,7 +19,7 @@ import { IoMdShareAlt } from "react-icons/io"
 import { BsSave } from "react-icons/bs"
 import { BiHide } from "react-icons/bi"
 import { BsFlag } from "react-icons/bs"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
@@ -32,6 +34,23 @@ import "../scss/posts.scss"
 import { fetchPosts, removePost } from "../redux/post/postActionCreators"
 import { useNavigate } from "react-router-dom"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -41,10 +60,46 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const HANDLE_LIKE = Symbol("HANDLE_LIKE");
+const HANDLE_DISLIKE = Symbol("HANDLE_DISLIKE");
+const initialState = {
+    likes: 100,
+    dislikes: 12,
+    active: null
+};
+
+const reducer = (state, action) => {
+    const { likes, dislikes, active } = state;
+
+    switch (action.type) {
+        case HANDLE_LIKE:
+            return {
+                ...state,
+                likes: state.likes + 1,
+                dislikes: active === "dislike" ? dislikes - 1 : dislikes,
+                active: "like"
+            };
+        case HANDLE_DISLIKE:
+            return {
+                ...state,
+                likes: active === "like" ? likes - 1 : likes,
+                active: "dislike",
+                dislikes: dislikes + 1
+            };
+        default:
+            return state;
+    }
+};
+
 export default function Posts() {
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const { likes, dislikes, active } = state;
+
+
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const [openDots, setOpenDots] = React.useState(false);
@@ -258,9 +313,13 @@ export default function Posts() {
                                 <div className="post__item" >
                                     <div className="post__item--inner" >
                                         <div className="post__vote">
-                                            <FaLongArrowAltUp className="up__arrow" />
-                                            <h1>1.2k</h1>
-                                            <FaLongArrowAltDown className="down__arrow" />
+                                            <FaLongArrowAltUp className="up__arrow" onClick={() =>
+                                                active !== "like" ? dispatch({ type: HANDLE_LIKE }) : null
+                                            } />
+                                            <h1>{likes}</h1>
+                                            <FaLongArrowAltDown className="down__arrow" onClick={() =>
+                                                active !== "dislike" ? dispatch({ type: HANDLE_DISLIKE }) : null
+                                            } />
                                         </div>
                                         <div className="post__view" >
                                             <div onClick={() => navigate(`/post/${pst.postId}`)}>
