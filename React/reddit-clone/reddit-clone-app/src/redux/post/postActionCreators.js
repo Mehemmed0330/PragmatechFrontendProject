@@ -172,7 +172,7 @@ export const doReply = (reply, postId, prevComments, index) => (dispatch) => {
         comments: oldComments,
     }).then(() => {
         console.log(alert("comment added"));
-        dispatch(addReply({ oldComments, postId }));
+        dispatch(({ oldComments, postId }));
 
     }).catch(err =>
         console.error(err));
