@@ -66,10 +66,10 @@ const Commentform = ({ currentPost }) => {
                         </div>
                         <ReplyForm comment={comment} currentPost={currentPost} index={index} />
 
-                        {user.name && currentPost.postData.createdBy === user.id &&
+                        {/* {user.name && currentPost.postData.createdBy === user.id &&
                             <div className="comment__delete">
                                 <button onClick={() => dispatch(removeComment(currentPost.postData.comment))}>Delete</button>
-                            </div>}
+                            </div>} */}
                     </div>
                 )}
 

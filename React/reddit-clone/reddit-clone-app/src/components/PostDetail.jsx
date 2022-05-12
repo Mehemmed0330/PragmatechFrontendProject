@@ -64,9 +64,9 @@ export default function PostDetail() {
                                 <div className="detail__by">
                                     <h1>Posted by <span>{user.name}</span> </h1>
                                 </div>
-                                <div className="detail__date">
+                                {/* <div className="detail__date">
                                     <span>4 hours ago</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="detail__about--post">

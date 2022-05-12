@@ -3,12 +3,13 @@ import Header from './components/Header';
 import Home from './components/Home';
 import CreatePostArea from "./components/CreatePostArea";
 import { Router, Routes, Route } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchPosts } from "./redux/post/postActionCreators"
 import PostDetail from './components/PostDetail';
 import { ThemeProvider } from "@material-ui/styles";
 import { darkTheme, lightTheme } from "./theme/theme";
+import { useSelector, shallowEqual, useDispatch } from "react-redux"
+import { selectUser } from "./redux/features/userSlice"
 
 
 
@@ -17,14 +18,17 @@ import { darkTheme, lightTheme } from "./theme/theme";
 
 
 function App() {
-  const isLoading = useSelector((state) => state.post.isLoading)
   const dispatch = useDispatch()
+
+  const isLoading = useSelector((state) => state.post.isLoading)
+  const user = useSelector(selectUser);
+
   useEffect(() => {
-    if (isLoading) {
+    if (user || !user) {
       dispatch(fetchPosts())
     }
 
-  }, [isLoading, dispatch]);
+  }, [user, dispatch]);
   const theme = useSelector((state) => state.theme);
 
 

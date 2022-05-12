@@ -38,24 +38,65 @@ export default function ReplyForm({ comment, currentPost, index }) {
 
 
     return (
-        <div>
+        <div style={{
+            display: "flex",
+            alignItems: "center"
+        }}>
             <ShowReplies allReplies={comment.replies} />
             {/* <p style={{
                 display: `${comment.replies.length > 0 ? "block" : "none"}`,
             }}>{comment.replies.length}</p> */}
             {
                 openReplyForm ?
-                    <div>
+                    <div style={{
+                        // marginLeft: "10px",
+                    }}>
                         <div className="reply__form">
-                            <textarea name="" id="" cols="30" rows="10" value={reply} onChange={(e) => setReply(e.target.value)}></textarea>
+                            <textarea name="" id="" cols="30" value={reply} onChange={(e) => setReply(e.target.value)}
+                                style={{
+                                    width: "100%",
+                                    borderRadius: "10px",
+                                    marginTop: "10px",
+                                }}
+                            ></textarea>
                         </div>
                         <div className="reply__button--group">
-                            <button onClick={handleSubmit}>Reply</button>
-                            <button onClick={() => setOpenReplyForm(false)}>Cancel</button>
+                            <button onClick={handleSubmit} style={{
+                                backgroundColor: "transparent",
+                                border: "none",
+                                outline: "none",
+                                border: "1px solid blue",
+                                padding: "3px 10px",
+                                borderRadius: "10px",
+                                color: "blue"
+
+                            }}>Reply</button>
+                            <button onClick={() => setOpenReplyForm(false)} style={{
+                                backgroundColor: "transparent",
+                                border: "none",
+                                outline: "none",
+                                border: "1px solid blue",
+                                padding: "3px 10px",
+                                margin: "5px 50px",
+                                borderRadius: "10px",
+                                color: "blue"
+                            }}>Cancel</button>
                         </div>
                     </div>
                     :
-                    <button onClick={() => setOpenReplyForm(true)}>Reply</button>
+                    <button onClick={() => setOpenReplyForm(true)} style={{
+                        backgroundColor: "transparent",
+                        border: "none",
+                        outline: "none",
+                        border: "1px solid blue",
+                        padding: "3px 10px",
+                        marginTop: "5px",
+                        marginLeft: "10px",
+                        borderRadius: "10px",
+                        color: "blue"
+
+
+                    }}>Reply</button>
             }
         </div>
     )

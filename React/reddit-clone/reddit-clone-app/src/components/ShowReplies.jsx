@@ -14,7 +14,9 @@ export default function ShowReplies({ allReplies }) {
             {replies &&
                 <div className="replies__list">
                     {allReplies.map((reply, index) =>
-                        <div className="comment__item" key={index}>
+                        <div className="comment__item" key={index} style={{
+                            marginLeft: "50px",
+                        }}>
 
                             <div style={{
                                 display: "flex",
@@ -36,6 +38,14 @@ export default function ShowReplies({ allReplies }) {
             }
             <button onClick={() => setReplies((showReplies) => !showReplies)} style={{
                 display: `${allReplies.length > 0 ? "block" : "none"}`,
+                backgroundColor: "transparent",
+                border: "none",
+                outline: "none",
+                border: "1px solid blue",
+                padding: "3px 10px",
+                margin: "5px 50px",
+                borderRadius: "10px",
+                color: "blue"
             }}>
                 {replies ? "Hide Replies" : "Show Replies"}
                 {allReplies.length}

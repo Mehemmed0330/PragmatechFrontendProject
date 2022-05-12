@@ -333,9 +333,9 @@ export default function Posts() {
                                                     <div className="posted__by">
                                                         <h1>Posted by <span>{user.name}</span> </h1>
                                                     </div>
-                                                    <div className="post__date">
+                                                    {/* <div className="post__date">
                                                         <span>4 hours ago</span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div className="post__text">
                                                     <p>{pst.postData.title}</p>
