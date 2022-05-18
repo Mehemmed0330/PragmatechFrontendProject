@@ -1,71 +1,78 @@
 import React from 'react'
 import Footer from "./Footer"
-import { useState, useEffect } from "react"
-import axios from "axios"
+import { BsClock } from "react-icons/bs"
+import { AiOutlineCalendar } from "react-icons/ai"
 
-
-export default function BeDriver() {
-    const [name, setName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [password, setPassword] = useState("");
-    useEffect(() => {
-
-
-    }, []);
-
-    const postData = (e) => {
-        e.preventDefault();
-        axios.post("http://144.91.97.115:9090/api/v1/driver/Account/RegisterConfirm", {
-            "phoneNumber": phone,
-            "email": email,
-            "password": password,
-            "firstname": name,
-            "lastname": lastName,
-            "driverLicenseBase64": "string",
-            "narcalogyDispensaryLicenseBase64": "string",
-            "driverPhoto": "string",
-            "confirmationCode": "string",
-            "smsSignature": "string"
-        }).then(res => console.log("Posting data", res)).catch((err) => {
-
-            if (err.response) {
-
-                console.log("error1")
-            } else if (err.request) {
-
-                console.log("error2")
-            } else if (err.message) {
-
-                console.log("errro3")
-            }
-        })
-
-    }
-
-
+export default function beDriver() {
     return (
+
         <div>
-            <div class="flex flex-col bg-driverImage bg-cover h-56 w-full bg-no-repeat mt-8  text-white justify-center align-middle	">
-                <span class="text-center font-custom1 text-6xl	tracking-wide">Sürücü müsünüz?</span>
-            </div>
-            <div class="text-center font-custom1  tracking-wide leading-9 w-3/4 m-auto font-light py-24	">
-                BiŞöför ile daha çok kazanın! Üstelik kullanmak çok kolay!
-                <p>Yapmanız gereken tek şey, alttaki formu doldurmak. Sonrasında sizi en kısa zamanda arayarak kayıt işleminizi tamamlayacağız.
-                </p>
-            </div >
-            <div>
-                <input type="text" class="border-black border-2" placeholder="firstname" onChange={(e) => setName(e.target.value)} />
-                <input type="text" class="border-black border-2" placeholder="lastname" onChange={(e) => setLastName(e.target.value)} />
-                <input type="text" class="border-black border-2" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
-                <input type="text" class="border-black border-2" placeholder="phone" onChange={(e) => setPhone(e.target.value)} />
-                <input type="text" class="border-black border-2" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
+            <div class="px-24 ">
+                <div>
+                    <div class="text-center mt-5">
+                        <span class="text-2xl font-medium font-custom1	">Lorem ipsum</span>
+                        <p class="text-base ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="flex justify-between mb-5">
+                        <div class="my-10  w-1/4 leading-10	">
+                            <BsClock class="text-3xl mt-2	" />
+                            <span class="text-lg font-bold	">Lorem ipsum dolor sit.</span>
+                            <p class="text-base	">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                <button onClick={postData} class="border-black border-2">Post</button>
-            </div>
+                        </div>
+                        <div class="my-10  w-1/4 leading-10	">
+                            <BsClock class="text-3xl mt-2	" />
+                            <span class="text-lg font-bold	">Lorem ipsum dolor sit.</span>
+                            <p class="text-base	">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
+                        </div><div class="my-10 w-1/4  leading-10	">
+                            <AiOutlineCalendar class="text-3xl mt-2	" />
+                            <span class="text-lg font-bold	">Lorem ipsum dolor sit.</span>
+                            <p class="text-base	">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center bg-yellow-300 px-24 py-2 font-bold text-lg">
+                    Sürücü ol
+                </div>
+            </div>
+            <div class="px-24 py-10">
+                <form>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input type="email" name="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+                    </div>
+                    <div class="grid xl:grid-cols-2 xl:gap-6">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                        </div>
+                    </div>
+                    <div class="grid xl:grid-cols-2 xl:gap-6">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                </form>
+            </div>
             <Footer />
-        </div >
+        </div>
+
     )
 }

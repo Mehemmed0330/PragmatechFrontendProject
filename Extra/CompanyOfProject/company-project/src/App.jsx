@@ -1,26 +1,27 @@
-import './App.css';
-import { Routes, Route } from "react-router-dom"
+import React from 'react'
 import Header from "./components/Header"
-import About from "./components/About"
-import Services from "./components/Services"
-import BeDriver from "./components/BeDriver"
 import Home from "./components/Home"
+import { Routes, Route } from 'react-router-dom'
+import About from "./components/About"
+import Driver from "./components/beDriver"
+import Customer from "./components/beCustomer"
+import Contact from "./components/Contact"
+import Companies from "./components/Companies"
+import Cash from "./components/Cash"
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/beDriver" element={<BeDriver />} />
+        <Route path="/driver" element={<Driver />} />
+        <Route path="/customer" element={<Customer />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/companies" element={<Companies />} />
+        <Route path="/cash" element={<Cash />} />
       </Routes>
-
-
     </div>
-  );
+  )
 }
-
-export default App;
