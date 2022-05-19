@@ -19,12 +19,16 @@ const options = [
 export default function Header() {
     const link = [
         { name: "Ana Sayfa", to: "/" },
-        { name: "BiŞoför nedir?", to: "/about" },
-        { name: "Sürücü ol", to: "/driver" },
-        { name: "Müşteri ol", to: "/customer" },
+        { name: "Hakkımızda", to: "/about" },
+        // { name: "Müşteri ol", to: "/customer" },
+        { name: "Hizmetlerimiz", to: "/service" },
+        { name: "Ücretlendirme", to: "/cash" },
+        { name: "Bişöför ol", to: "/driver" },
+        { name: "Kampaniyalar", to: "/campaign" },
+        { name: "Blog", to: "/companies" },
         { name: "İletişim", to: "/contact" },
-        { name: "Kampaniyalar", to: "/companies" },
-        { name: "Ücretlendirme", to: "/cash" }
+        { name: "FAQ", to: "/faq" },
+
     ]
 
 
